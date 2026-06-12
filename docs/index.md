@@ -1,21 +1,21 @@
 ## AI-in-a-day
 
-GenAI is reshaping the scientific landscape, with the speed and magnitude of transformation set to accelerate. This emerging paradigm has profound implications for environmental science, where computationally intensive workflows are common. Yet many environmental scientists are constrained by limited time, resources, and tools designed specifically for their domain, making it difficult to keep up with the breakneck evolution of GenAI and integrate it meaningfully into their research. We propose to help fill this critical gap by developing a suite of “AI in a Day” community-driven training modules designed to provide environmental scientists with easily digestible resources that will empower them to capitalize on AI-enabled tools and workflows. We envision open-source training materials that will be available online as well as delivered by ESIIL workshop practitioners to audiences at scientific conferences and workshops, university seminars, and to research teams. The materials will be designed to be modular and we will foster a community of curators so that the resources remain relevant as technologies and approaches evolve.
+Generative Artificial Intelligence (GenAI) tools such as ChatGPT, Google Gemini, and GitHub CoPilot are rapidly transforming environmental science, yet many researchers lack a foundational understanding of these tools and the time or resources to learn them. To bridge this gap, we propose “AI in a Day”: a suite of open-access, community-driven training modules that equip environmental scientists to integrate AI effectively and responsibly into their research. Delivered through ESIIL workshops, conferences, and online platforms, modular materials will provide practical, up-to-date guidance that democratizes AI knowledge and empowers scientists across career stages to engage fully in the evolving landscape of AI-enabled environmental science.
 
 This working group runs as a single system: a GitHub repository where environmental data science is organized, analyzed, and versioned, and a public website where results are explained and shared with the community.
 
 As the working group progresses, the repository becomes the reproducible record of the science, and the website becomes the public report.
 
-[Edit this homepage in GitHub](https://github.com/CU-ESIIL/Working_group_OASIS/edit/main/docs/index.md){ .md-button .md-button--secondary }
-[Open the GitHub repository](https://github.com/CU-ESIIL/Working_group_OASIS){ .md-button }
+[Edit this homepage in GitHub](https://github.com/CU-ESIIL/AI-in-a-day/edit/main/docs/index.md){ .md-button .md-button--secondary }
+[Open the GitHub repository](https://github.com/CU-ESIIL/AI-in-a-day){ .md-button }
 
-![Placeholder image for the homepage overview][slot-hero]{ .homepage-hero }
+![Placeholder image for the homepage overview][assets/images/TowerCliff1.jpg]{ .homepage-hero }
 
 --8<-- "_generated/slot_notes/hero.md"
 
 ## Working Group Abstract
 
-Add an overview of who your group is, why you have come together and what questions you are answering. This is very similar to your working group description on the esiil website.
+GenAI is reshaping the scientific landscape, with the speed and magnitude of transformation set to accelerate. This emerging paradigm has profound implications for environmental science, where computationally intensive workflows are common. Yet many environmental scientists are constrained by limited time, resources, and tools designed specifically for their domain, making it difficult to keep up with the breakneck evolution of GenAI and integrate it meaningfully into their research. We propose to help fill this critical gap by developing a suite of “AI in a Day” community-driven training modules designed to provide environmental scientists with easily digestible resources that will empower them to capitalize on AI-enabled tools and workflows. We envision open-source training materials that will be available online as well as delivered by ESIIL workshop practitioners to audiences at scientific conferences and workshops, university seminars, and to research teams. The materials will be designed to be modular and we will foster a community of curators so that the resources remain relevant as technologies and approaches evolve.
 
 ## Start Here
 
@@ -113,14 +113,13 @@ Use this section for the links your group will actually maintain. Replace each p
 
 ## Current Phase
 
-Working Phase: Preparing for Meeting 1  
-(Replace this line with the phase your group is actually in, such as working asynchronously, preparing outputs, or revising a manuscript.)
+Working Phase: Preparing for Meeting 1
+- developing AI-needs survey
+- meeting logistics
+
+
 
 ## Team Members
-
-Replace this table with names, roles, institutions, and responsibilities so new collaborators know who is doing what.
-
-Related landmark: WG-A People and roles.
 
 ![Placeholder image representing collaboration and group identity][slot-group-photo]{ .section-image }
 
