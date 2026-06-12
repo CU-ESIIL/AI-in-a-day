@@ -1,11 +1,11 @@
-site_name: 'ESIIL Working Group OASIS'
-site_description: 'Repository and website template for ESIIL working groups'
-site_author: Ty Tuff
-site_url: https://cu-esiil.github.io/Working_group_OASIS
+site_name: 'AI-in-a-day'
+site_description: 'Repository and website for ESIIL AI-in-a-day working group'
+site_author: Stevan Earl
+site_url: https://cu-esiil.github.io/AI-in-a-day
 
 # Repository
-repo_name: Working_group_OASIS
-repo_url: https://github.com/CU-ESIIL/Working_group_OASIS
+repo_name: AI-in-a-day
+repo_url: https://github.com/CU-ESIIL/AI-in-a-day
 # The edit URI points MkDocs Material at the docs/ source so page edit links open in GitHub edit mode.
 edit_uri: edit/main/docs/
 # Copyright
