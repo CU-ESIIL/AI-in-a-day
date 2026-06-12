@@ -1,8 +1,6 @@
-# Home
-This is a template.
-## Working Group Title
+## AI-in-a-day
 
-Working Group Title
+GenAI is reshaping the scientific landscape, with the speed and magnitude of transformation set to accelerate. This emerging paradigm has profound implications for environmental science, where computationally intensive workflows are common. Yet many environmental scientists are constrained by limited time, resources, and tools designed specifically for their domain, making it difficult to keep up with the breakneck evolution of GenAI and integrate it meaningfully into their research. We propose to help fill this critical gap by developing a suite of “AI in a Day” community-driven training modules designed to provide environmental scientists with easily digestible resources that will empower them to capitalize on AI-enabled tools and workflows. We envision open-source training materials that will be available online as well as delivered by ESIIL workshop practitioners to audiences at scientific conferences and workshops, university seminars, and to research teams. The materials will be designed to be modular and we will foster a community of curators so that the resources remain relevant as technologies and approaches evolve.
 
 This working group runs as a single system: a GitHub repository where environmental data science is organized, analyzed, and versioned, and a public website where results are explained and shared with the community.
 
@@ -128,9 +126,19 @@ Related landmark: WG-A People and roles.
 
 --8<-- "_generated/slot_notes/group-photo.md"
 
-| Name | Role | Institution | Responsibilities |
-| --- | --- | --- | --- |
-| Name | Role | Institution | Responsibilities |
-| Name | Role | Institution | Responsibilities |
+|Name                |Project Role             |Institution                                                                          |Responsibilities |
+|:-------------------|:------------------------|:------------------------------------------------------------------------------------|:----------------|
+|Li Kui              |Co-PI                    |University of California, Santa Barbara                                              |NA               |
+|Sarah Elmendorf     |Co-PI                    |University of Colorado                                                               |NA               |
+|Stevan Earl         |Co-PI; ESIIL Tech Lead   |Arizona State University                                                             |NA               |
+|Nick J Lyon         |Co-PI; ESIIL Collab Lead |Long Term Ecological Research Network Office, University of California Santa Barbara |NA               |
+|Nate Emery          |Co-PI                    |University of California, Santa Barbara                                              |NA               |
+|Carmen Galaz García |Member                   |University of California, Santa Barbara                                              |NA               |
+|Rui Cheng           |Member                   |Claremont McKenna College                                                            |NA               |
+|Bobby Hodgkinson    |Member                   |University of Colorado                                                               |NA               |
+|Sue McClatchy       |Member                   |Jackson Laboratory                                                                   |NA               |
+|Greg Maurer         |Member                   |New Mexico State University                                                          |NA               |
+|Nathan Quarderer    |Member                   |University of Colorado                                                               |NA               |
+
 
 --8<-- "_generated/image_slots.md"
