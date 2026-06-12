@@ -256,3 +256,21 @@ Actions taken
 * Renamed navigation section to ESIIL and Team Resources in `mkdocs.yml`.
 * Added ESIIL Community Care and Team Science GitHub links to `docs/community-care.md`.
 * Updated README and template health scripts for the new navigation layout.
+
+2026-06-12
+
+Prompt
+
+User asked to assess the early-stage public site, fix the broken hero image, trim unused template image references, add Meeting 1 in-person dates, and retain lightweight placeholders/instructions.
+
+Actions taken
+
+* Fixed the homepage hero image syntax to correctly load `assets/images/TowerCliff1.jpg` in `docs/index.md`.
+* Reduced high-noise placeholder image/gallery blocks on core pages while preserving concise contributor guidance in `docs/index.md`, `docs/work-plan.md`, and `docs/how-this-group-works.md`.
+* Added Meeting 1 in-person dates (August 31-September 3, 2026) to `docs/work-plan.md`.
+* Replaced generic `[link]` placeholders on key pages with clearer "add link" prompts to keep the template usable without looking broken.
+
+Verification
+
+* Ran `/home/srearl/localRepos/AI-in-a-day/.venv/bin/python scripts/site_health.py` (0 warnings generated).
+* Ran `/home/srearl/localRepos/AI-in-a-day/.venv/bin/mkdocs build --strict --clean` (build succeeded).

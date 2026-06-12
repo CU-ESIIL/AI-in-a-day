@@ -9,7 +9,7 @@ As the working group progresses, the repository becomes the reproducible record 
 [Edit this homepage in GitHub](https://github.com/CU-ESIIL/AI-in-a-day/edit/main/docs/index.md){ .md-button .md-button--secondary }
 [Open the GitHub repository](https://github.com/CU-ESIIL/AI-in-a-day){ .md-button }
 
-![Placeholder image for the homepage overview][assets/images/TowerCliff1.jpg]{ .homepage-hero }
+![Tower Cliff landscape near ESIIL field sites](assets/images/TowerCliff1.jpg){ .homepage-hero }
 
 --8<-- "_generated/slot_notes/hero.md"
 
@@ -19,11 +19,9 @@ GenAI is reshaping the scientific landscape, with the speed and magnitude of tra
 
 ## Start Here
 
-1. Replace the title and summary with the working group question, the community or scientific need, and the main outputs the group expects to produce.
-2. Add or link the datasets, working documents, and references your group will use.
-3. Run or adapt at least one analysis workflow and record decisions in the repository.
-4. Commit figures, tables, notes, and summaries so the work is versioned and reproducible.
-5. Use the website to share progress, methods, and results with collaborators and community audiences.
+1. Keep the title and summary aligned with the working group question and community need.
+2. Add the core datasets, working documents, and references as they become available.
+3. Use this site to post progress updates, methods notes, and outputs throughout the year.
 
 [Plan the work](work-plan.md){ .md-button }
 [Document data and resources](how-this-group-works.md#data){ .md-button .md-button--secondary }
@@ -50,9 +48,7 @@ The repository has two connected layers. Top-level files configure the project a
 
 ## Repository Side: Do the Science
 
-![Placeholder image for the repository side of the workflow][slot-repository-side]{ .slot-button-image }
-
---8<-- "_generated/slot_notes/repository-side.md"
+Use the repository as the operational record of the project and update this section with concrete links as those resources are created.
 
 Related landmarks: WG-C Data and access; WG-D Methods and workflows.
 
@@ -66,9 +62,7 @@ The repository is the working record of the group: it tracks what changed, why i
 
 ## Website Side: Share the Science
 
-![Placeholder image for the website side of the workflow][slot-website-side]{ .slot-button-image }
-
---8<-- "_generated/slot_notes/website-side.md"
+Use the website as the public-facing report and keep narrative pages up to date as milestones are reached.
 
 Related landmarks: WG-E Results and synthesis; WG-F Outputs and handoff.
 
@@ -96,20 +90,18 @@ A working group is live when:
 
 For guidance on turning this scaffold into a public scientific record, see the [Public-Facing Site Guide](public-facing-site-guide.md).
 
-## Early Process Gallery
+## Early Process Snapshot
 
-Use this section to show how the working group gets started without manually editing image links one by one.
-
---8<-- "_generated/galleries/root/start-here/index.md"
+This section can host one or two key kickoff visuals or summaries once the first meeting materials are available.
 
 ## Key Links to Replace
 
 Use this section for the links your group will actually maintain. Replace each placeholder with the working document, repository resource, dataset hub, or output page that your collaborators should use.
 
-- Main Working Document: [link]
-- GitHub Repository: [link]
-- Data / Resources: [link]
-- Outputs / Dashboard: [link]
+- Main Working Document: add URL here
+- GitHub Repository: https://github.com/CU-ESIIL/AI-in-a-day
+- Data / Resources: add URL here
+- Outputs / Dashboard: add URL here
 
 ## Current Phase
 
@@ -121,9 +113,7 @@ Working Phase: Preparing for Meeting 1
 
 ## Team Members
 
-![Placeholder image representing collaboration and group identity][slot-group-photo]{ .section-image }
-
---8<-- "_generated/slot_notes/group-photo.md"
+Add a group photo after the first in-person meeting.
 
 |Name                |Project Role             |Institution                                                                          |Responsibilities |
 |:-------------------|:------------------------|:------------------------------------------------------------------------------------|:----------------|
@@ -138,6 +128,3 @@ Working Phase: Preparing for Meeting 1
 |Sue McClatchy       |Member                   |Jackson Laboratory                                                                   |NA               |
 |Greg Maurer         |Member                   |New Mexico State University                                                          |NA               |
 |Nathan Quarderer    |Member                   |University of Colorado                                                               |NA               |
-
-
---8<-- "_generated/image_slots.md"

@@ -19,34 +19,14 @@
 
 ## Data
 
-- [link]
-- [link]
-
-![Placeholder image representing data sources and metadata][slot-data]{ .slot-square-image }
-
---8<-- "_generated/slot_notes/data.md"
-
-### Data Gallery
-
---8<-- "_generated/galleries/root/data/index.md"
+- Add your primary dataset hub link.
+- Add your metadata or data-access notes link.
 
 ## Code
 
-- [link]
-- [link]
+- Add your main analysis repository or folder link.
+- Add your reproducible workflow or notebook index link.
 
 ## Methods
 
-![Placeholder image representing analysis methods and notebooks][slot-analysis]{ .slot-square-image }
-
---8<-- "_generated/slot_notes/analysis.md"
-
-### Methods Gallery
-
---8<-- "_generated/galleries/root/methods/index.md"
-
-### Exploration Gallery
-
---8<-- "_generated/galleries/root/exploration/index.md"
-
---8<-- "_generated/image_slots.md"
+Add a short methods summary here as soon as the first workflow draft is available.
