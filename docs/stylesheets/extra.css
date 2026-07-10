@@ -127,7 +127,7 @@ body {
 
 .md-content__inner {
   padding: clamp(1.2rem, 1rem + 0.7vw, 2rem);
-  background: rgba(255, 255, 255, 0.72);
+  background: var(--esiil-color-brand-800);
   border: 1px solid rgba(255, 255, 255, 0.7);
   box-shadow: var(--esiil-shadow-md);
   backdrop-filter: blur(8px);
@@ -296,7 +296,7 @@ body {
 }
 
 .md-typeset .md-button--secondary {
-  background: rgba(255, 255, 255, 0.78);
+  background: var(--esiil-color-brand-900);
   color: var(--esiil-color-heading);
   border-color: var(--esiil-color-border-strong);
   box-shadow: none;
