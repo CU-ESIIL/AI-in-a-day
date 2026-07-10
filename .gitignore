@@ -39,13 +39,14 @@ vignettes/*.pdf
 # R Environment Variables
 .Renviron
 
-
-
 # translation temp files
 po/*~
 
 # RStudio Connect folder
 rsconnect/
+
+# RStudio project
+*.Rproj
 
 # macOS
 .DS_Store
