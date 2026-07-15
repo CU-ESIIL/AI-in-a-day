@@ -19,7 +19,3 @@ In alphabetical order:
 - **Greg Maurer** | New Mexico State University
 - **Sue McClatchy** | Jackson Laboratory
 - **Nathan Quarderer** | University of Colorado
-
-### Past Members
-
-- **Bobby Hodgkinson** | University of Colorado
