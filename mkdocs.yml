@@ -1,6 +1,6 @@
-site_name: 'AI-in-a-day'
-site_description: 'Repository and website for ESIIL AI-in-a-day working group'
-site_author: Stevan Earl
+site_name: 'AI in a Day'
+site_description: "Website for ESIIL 'AI in a Day' working group"
+site_author: "'AI in a Day' Working Group"
 site_url: https://cu-esiil.github.io/AI-in-a-day
 
 # Repository
@@ -9,7 +9,7 @@ repo_url: https://github.com/CU-ESIIL/AI-in-a-day
 # The edit URI points MkDocs Material at the docs/ source so page edit links open in GitHub edit mode.
 edit_uri: edit/main/docs/
 # Copyright
-copyright: 'Copyright &copy; 2024 University of Colorado Boulder'
+copyright: 'Copyright &copy; 2026 University of Colorado Boulder'
 
 # Page tree
 nav:
