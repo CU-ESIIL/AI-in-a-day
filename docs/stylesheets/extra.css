@@ -127,7 +127,7 @@ body {
 
 .md-content__inner {
   padding: clamp(1.2rem, 1rem + 0.7vw, 2rem);
-  background: var(--esiil-color-brand-800);
+  background: var(--esiil-color-accent-600);
   border: 1px solid rgba(255, 255, 255, 0.7);
   box-shadow: var(--esiil-shadow-md);
   backdrop-filter: blur(8px);
