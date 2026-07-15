@@ -1,8 +1,14 @@
 # Working Group Landmarks
 
+Use these lightweight labels to connect work sessions, meeting notes, and homepage edits:
+
+WG-A People and roles; WG-B Question and scope; WG-C Data and access; WG-D Methods and workflows; WG-E Results and synthesis; WG-F Outputs and handoff.
+
+## ESIIL =Landmark Guide
+
 Working group landmarks are lightweight labels that connect instruction pages to the homepage sections participants may need to edit. They are not a new workflow and they are not a visual sticker system. They are simple markers for finding the right part of the site.
 
-## Labels
+### Labels
 
 | Label | Meaning | Common homepage or repo location |
 | --- | --- | --- |
@@ -15,7 +21,7 @@ Working group landmarks are lightweight labels that connect instruction pages to
 
 Use the labels when meeting notes or instruction pages need to point participants toward the place where a change belongs.
 
-## How To Use The Labels
+### How To Use The Labels
 
 When a participant asks "Where should this go?", choose the nearest landmark:
 
@@ -38,7 +44,7 @@ or:
 Related landmarks: WG-D Methods and workflows; WG-E Results and synthesis
 ```
 
-## Homepage Connections
+### Homepage Connections
 
 The current homepage already has natural places for these labels:
 
@@ -52,7 +58,7 @@ Keep labels subtle. A short line is enough. Do not clutter the homepage with rep
 
 Future visual design note: if the working group later wants sticker-style visual markers, add them as a small CSS and image-system improvement rather than embedding complex HTML in Markdown.
 
-## Related Pages
+### Related Pages
 
 - [Working Group Lifecycle](working-group-lifecycle.md)
 - [Public-Facing Site Guide](../public-facing-site-guide.md)
