@@ -9,3 +9,4 @@ This repository hosts the workshop materials developed by this ESIIL-funded synt
 - `docs/` - Markdown source for the public website
 - `scripts/` - Build helpers and site health checks
 - `containers/` - Optional runtime and environment setup
+- `esiil-starter-content/` - Template content from ESIIL (e.g., GitHub tutorial, explanation of GitHub-website connection, 'homework' for setting up site, etc.)
