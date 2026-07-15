@@ -14,6 +14,7 @@ copyright: 'Copyright &copy; 2026 University of Colorado Boulder'
 # Page tree
 nav:
   - Home: index.md
+  - Team: team.md
   - Work Plan: work-plan.md
   - How This Group Works: how-this-group-works.md
   - ESIIL and Team Resources:
