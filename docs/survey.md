@@ -6,7 +6,7 @@ This survey is being administered by the Office of Teaching and Learning and the
 
 The survey will take approximately 10-15 minutes to complete. The survey is entirely anonymous. 
 
-We would be grateful if you would please forward this on to colleagues and communities who might be willing to participate in order to help us reach a broad audience. Please do not distribute on social media as we would like to avoid bots. **We are collecting responses until August 17^th^**. For any questions, please contact Nate Emery (nemery \[at\] ucsb \[dot\] edu).
+We would be grateful if you would please forward this on to colleagues and communities who might be willing to participate in order to help us reach a broad audience. Please do not distribute on social media as we would like to avoid bots. **We are collecting responses until August 17th**. For any questions, please contact Nate Emery (nemery \[at\] ucsb \[dot\] edu).
 
 UCSB IRB Approval \#: 1-26-0467
 
