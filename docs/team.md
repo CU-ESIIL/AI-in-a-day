@@ -14,6 +14,7 @@ In alphabetical order:
 
 In alphabetical order:
 
+- **Derek Briggs** | University of Colorado
 - **Rui Cheng** | Claremont McKenna College
 - **Carmen Galaz García** | University of California, Santa Barbara
 - **Greg Maurer** | New Mexico State University
