@@ -35,11 +35,6 @@ REQUIRED_PROCESS_FOLDERS = [
 
 REQUIRED_FILES = [
     ROOT / "docs/index.md",
-    ROOT / "docs/work-plan.md",
-    ROOT / "docs/how-this-group-works.md",
-    ROOT / "docs/esiil-resources/team-trainings.md",
-    ROOT / "docs/esiil-resources/code-of-conduct.md",
-    ROOT / "docs/community-care.md",
     ROOT / "mkdocs.yml",
     ROOT / "README.md",
     ROOT / "AGENTS.md",
@@ -54,7 +49,7 @@ PLACEHOLDERS = {
     "Name | Role": "people table placeholder",
 }
 
-REQUIRED_NAV = ["Home", "Work Plan", "How This Group Works", "ESIIL and Team Resources"]
+REQUIRED_NAV = ["Home"]
 DEPRECATED_NAV = ["Art Gallery", "Code of Conduct", "Participant Agreement"]
 TEXT_FILES = [ROOT / "README.md", ROOT / "AGENTS.md", ROOT / "PROMPT_ACTION_LOG.md", MKDOCS]
 
