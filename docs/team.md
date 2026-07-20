@@ -5,10 +5,10 @@
 In alphabetical order:
 
 - **Stevan Earl** (ESIIL Tech Lead) | Arizona State University
-- **Sarah Elmendorf** | University of Colorado
-- **Nate Emery** | University of California, Santa Barbara
-- **Li Kui** | University of California, Santa Barbara
-- **Nick J Lyon** (ESIIL Collab Lead) | Long Term Ecological Research (LTER) Network Office
+- **Sarah Elmendorf** - _sarah.elmendorf@colorado.edu_ | University of Colorado
+- **Nate Emery** - _nemery@ucsb.edu_ | University of California, Santa Barbara
+- **Li Kui** - _lkui@ucsb.edu_ | University of California, Santa Barbara
+- **Nick J Lyon** (ESIIL Collab Lead) - _[njlyon0.github.io](https://njlyon0.github.io/)_ | Long Term Ecological Research (LTER) Network Office
 
 ## Current Members
 
@@ -16,7 +16,7 @@ In alphabetical order:
 
 - **Derek Briggs** | University of Colorado
 - **Rui Cheng** | Claremont McKenna College
-- **Carmen Galaz García** | University of California, Santa Barbara
-- **Greg Maurer** | New Mexico State University
-- **Sue McClatchy** | Jackson Laboratory
-- **Nathan Quarderer** | University of Colorado
+- **Carmen Galaz García** - _c\_galazgarcia@ucsb.edu_ | University of California, Santa Barbara
+- **Greg Maurer** - _gmaurer@nmsu.edu_ | New Mexico State University
+- **Sue McClatchy** - _susan.mcclatchy@jax.org_ | Jackson Laboratory
+- **Nathan Quarderer** - _nathan.quarderer@colorado.edu_ | University of Colorado
