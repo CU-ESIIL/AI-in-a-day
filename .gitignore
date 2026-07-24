@@ -56,3 +56,43 @@ rsconnect/
 node_modules/
 site/
 test-results/
+
+# Microsoft Office partial files
+~$*.pptx
+~$*.xlsx
+~$*.docx
+
+# Image file types
+*.png
+*.jpeg
+*.jpg
+
+# Spatial data file types
+## Shapefile components
+*.shp
+*.shx
+*.sbn
+*.sbx
+*.shp.xml
+*.shx.xml
+*.prj
+*.dbf
+*.cpg
+## Non-shapefile spatial data
+*.nc
+*.tif
+*.geojson
+
+# Other file types
+*.pdf
+*.zip
+
+# Data file types
+*.csv
+*.xlsx
+*.xls
+*.txt
+
+# Folders to ignore
+data/
+graphs/
