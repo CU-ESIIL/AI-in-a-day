@@ -62,11 +62,6 @@ test-results/
 ~$*.xlsx
 ~$*.docx
 
-# Image file types
-*.png
-*.jpeg
-*.jpg
-
 # Spatial data file types
 ## Shapefile components
 *.shp
@@ -84,7 +79,6 @@ test-results/
 *.geojson
 
 # Other file types
-*.pdf
 *.zip
 
 # Data file types
