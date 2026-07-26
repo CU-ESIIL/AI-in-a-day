@@ -8,7 +8,7 @@
 
 # Load libraries
 # install.packages("librarian")
-librarian::shelf(tidyverse)
+librarian::shelf(tidyverse, psych)
 
 # Get set up
 source(file.path("scripts", "survey", "-setup.r"))
@@ -37,6 +37,21 @@ vals_v01 <- read.csv(file.path("data", vals_file))
 dplyr::glimpse(vals_v01)
 
 ## -------------------------------------------- ##
+# Generate Question Ref Table
+## -------------------------------------------- ##
+
+# Split off question lookup table
+## (for future reference / so we can remove it from the 'actual' data)
+lookup <- labs_v01 %>% 
+  dplyr::filter(StartDate == "Start Date") %>% 
+  tidyr::pivot_longer(cols = dplyr::everything(),
+    names_to = "name_in_data",
+    values_to = "question_text")
+
+# Check structure
+dplyr::glimpse(lookup)
+
+## -------------------------------------------- ##
 # Combine Data ----
 ## -------------------------------------------- ##
 
@@ -60,16 +75,39 @@ dplyr::glimpse(vals_v02)
 # Join the two datasets by responseId and drop duplicate cols
 svy_v01 <- labs_v01 %>% 
   dplyr::full_join(x = ., y = vals_v02, by = c("ResponseId")) %>% 
-  dplyr::select(-dplyr::ends_with(".y"))
+  dplyr::rename_with(.fn = ~ gsub(pattern = "\\.x", replacement = "", x = .),
+    .cols = dplyr::ends_with(".x")) %>% 
+  dplyr::select(-dplyr::ends_with(".y")) %>% 
+  dplyr::filter(StartDate != "Start Date" & 
+    stringr::str_detect(string = StartDate, pattern = "ImportId") != TRUE)
 
 # Check structure
 dplyr::glimpse(svy_v01)
 
+## -------------------------------------------- ##
+# Streamline Full Data ----
+## -------------------------------------------- ##
 
+# Check Captcha scores & survey duration to identify likely bots
+psych::multi.hist(as.numeric(svy_v01$Q_RecaptchaScore))
+psych::multi.hist(as.numeric(svy_v01$Duration..in.seconds.))
+
+# Remove response metadata, empty columns, and preview/non-consenting/bot rows
+svy_v02 <- svy_v01 %>% 
+  dplyr::filter(DistributionChannel != "preview") %>% 
+  dplyr::filter(ConsentQ == "Yes") %>% 
+  dplyr::filter(Q_RecaptchaScore > 0) %>% # PLACEHOLDER!
+  dplyr::filter(Duration..in.seconds. > 0) %>% # PLACEHOLDER!
+  dplyr::relocate(ResponseId, .before = dplyr::everything()) %>% 
+  dplyr::select(-StartDate:-ConsentQ) %>% 
+  dplyr::select(-where(fn = ~ all(is.na(.) | nchar(.) == 0)))
+
+# Check structure
+dplyr::glimpse(svy_v02)
 
 
 ## -------------------------------------------- ##
-# Export Tidied Data ----
+# Export Outputs ----
 ## -------------------------------------------- ##
 
 # Make a final data object
@@ -82,5 +120,8 @@ dplyr::glimpse(svy_v99)
 write.csv(x = svy_v99, row.names = FALSE, na = '',
   file = file.path("data", "survey-01_tidied.csv"))
 
+# Export question lookup
+write.csv(x = lookup, row.names = FALSE, na = '',
+  file = file.path("data", "question-lookup-table.csv"))
 
 # End ----
