@@ -55,37 +55,168 @@ graph_select_one(df = svy_v01, q = "AIUse_Freq") +
 ggsave(file.path("graphs", "survey-02_ai-frequency.png"),
   height = 7, width = 7, units = "in")
 
+# Tidy environment
+rm(list = c("ai_freq_cols"))
+
 ## -------------------------------------------- ##
 # AI Use Reasons Graph ----
 ## -------------------------------------------- ##
 
-unique(svy_v01$AIUse_reasons)
+# Prep the data for graphing
+ai_reason_df <- prep_select_all(df = svy_v01, q = "AIUse_reasons") %>% 
+  dplyr::mutate(value = stringr::str_wrap(string = value, width = 40)) %>% 
+  dplyr::mutate(value = factor(value, levels = rev(unique(value))))
 
+# Check structure
+dplyr::glimpse(ai_reason_df)
+
+# Make graph
+ggplot(data = ai_reason_df, aes(x = percent, y = value, 
+    fill = value, color = 'x')) +
+  geom_bar(stat = "identity") +
+  scale_color_manual(values = "#000") +
+  labs(x = "Percent Respondents (%)", y = "",
+    title = stringr::str_wrap(string = lkup$question_text[lkup$name_in_data == "AIUse_reasons"], width = 70)) +
+  guides(color = "none") +
+  supportR::theme_lyon(title_size = 20, text_size = 16) +
+    theme(axis.title.y = element_blank(),
+      legend.title = element_blank(),
+      legend.position = "none")
+
+# Export locally
+ggsave(file.path("graphs", "survey-02_ai-reasons.png"),
+  height = 15, width = 15, units = "in")
+  
+# Tidy environment
+rm(list = c("ai_reason_df"))
 
 ## -------------------------------------------- ##
 # Task Interest Graph ----
 ## -------------------------------------------- ##
 
-unique(svy_v01$Task_interest)
+# Prep the data for graphing
+task_df <- prep_select_all(df = svy_v01, q = "Task_interest") %>% 
+  dplyr::mutate(value = stringr::str_wrap(string = value, width = 40)) %>% 
+  dplyr::mutate(value = factor(value, levels = rev(unique(value))))
+
+# Check structure
+dplyr::glimpse(task_df)
+
+# Make graph
+ggplot(data = task_df, aes(x = percent, y = value, 
+    fill = value, color = 'x')) +
+  geom_bar(stat = "identity") +
+  scale_color_manual(values = "#000") +
+  labs(x = "Percent Respondents (%)", y = "",
+    title = stringr::str_wrap(string = lkup$question_text[lkup$name_in_data == "Task_interest"], width = 70)) +
+  guides(color = "none") +
+  supportR::theme_lyon(title_size = 20, text_size = 16) +
+    theme(axis.title.y = element_blank(),
+      legend.title = element_blank(),
+      legend.position = "none")
+
+# Export locally
+ggsave(file.path("graphs", "survey-02_task-interest.png"),
+  height = 15, width = 15, units = "in")
+  
+# Tidy environment
+rm(list = c("task_df"))
 
 ## -------------------------------------------- ##
 # Tech Skill Interest Graph ----
 ## -------------------------------------------- ##
 
-unique(svy_v01$TechSkill_Interest)
+# Prep the data for graphing
+skill_df <- prep_select_all(df = svy_v01, q = "TechSkill_Interest") %>% 
+  dplyr::mutate(value = stringr::str_wrap(string = value, width = 40)) %>% 
+  dplyr::mutate(value = factor(value, levels = rev(unique(value))))
+
+# Check structure
+dplyr::glimpse(skill_df)
+
+# Make graph
+ggplot(data = skill_df, aes(x = percent, y = value, 
+    fill = value, color = 'x')) +
+  geom_bar(stat = "identity") +
+  scale_color_manual(values = "#000") +
+  labs(x = "Percent Respondents (%)", y = "",
+    title = stringr::str_wrap(string = lkup$question_text[lkup$name_in_data == "TechSkill_Interest"], width = 70)) +
+  guides(color = "none") +
+  supportR::theme_lyon(title_size = 20, text_size = 16) +
+    theme(axis.title.y = element_blank(),
+      legend.title = element_blank(),
+      legend.position = "none")
+
+# Export locally
+ggsave(file.path("graphs", "survey-02_tech-skill-interest.png"),
+  height = 15, width = 15, units = "in")
+  
+# Tidy environment
+rm(list = c("skill_df"))
 
 ## -------------------------------------------- ##
 # Training Received Graph ----
 ## -------------------------------------------- ##
 
-unique(svy_v01$Training_Received)
+# Prep the data for graphing
+trainrec_df <- prep_select_all(df = svy_v01, q = "Training_Received") %>% 
+  dplyr::mutate(value = stringr::str_wrap(string = value, width = 40)) %>% 
+  dplyr::mutate(value = factor(value, levels = rev(unique(value))))
+
+# Check structure
+dplyr::glimpse(trainrec_df)
+
+# Make graph
+ggplot(data = trainrec_df, aes(x = percent, y = value, 
+    fill = value, color = 'x')) +
+  geom_bar(stat = "identity") +
+  scale_color_manual(values = "#000") +
+  labs(x = "Percent Respondents (%)", y = "",
+    title = stringr::str_wrap(string = lkup$question_text[lkup$name_in_data == "Training_Received"], width = 70)) +
+  guides(color = "none") +
+  supportR::theme_lyon(title_size = 20, text_size = 16) +
+    theme(axis.title.y = element_blank(),
+      legend.title = element_blank(),
+      legend.position = "none")
+
+# Export locally
+ggsave(file.path("graphs", "survey-02_training-received.png"),
+  height = 15, width = 15, units = "in")
+  
+# Tidy environment
+rm(list = c("trainrec_df"))
 
 ## -------------------------------------------- ##
 # Training Desired Graph ----
 ## -------------------------------------------- ##
 
-unique(svy_v01$Training_Desired)
+# Prep the data for graphing
+traindes_df <- prep_select_all(df = svy_v01, q = "Training_Desired") %>% 
+  dplyr::mutate(value = stringr::str_wrap(string = value, width = 40)) %>% 
+  dplyr::mutate(value = factor(value, levels = rev(unique(value))))
 
+# Check structure
+dplyr::glimpse(traindes_df)
+
+# Make graph
+ggplot(data = traindes_df, aes(x = percent, y = value, 
+    fill = value, color = 'x')) +
+  geom_bar(stat = "identity") +
+  scale_color_manual(values = "#000") +
+  labs(x = "Percent Respondents (%)", y = "",
+    title = stringr::str_wrap(string = lkup$question_text[lkup$name_in_data == "Training_Desired"], width = 70)) +
+  guides(color = "none") +
+  supportR::theme_lyon(title_size = 20, text_size = 16) +
+    theme(axis.title.y = element_blank(),
+      legend.title = element_blank(),
+      legend.position = "none")
+
+# Export locally
+ggsave(file.path("graphs", "survey-02_training-desired.png"),
+  height = 15, width = 15, units = "in")
+  
+# Tidy environment
+rm(list = c("traindes_df"))
 
 ## -------------------------------------------- ##
 # General Attitude Graph ----
@@ -119,19 +250,72 @@ svy_v01 %>%
 ggsave(file.path("graphs", "survey-02_general-attitude.png"),
   height = 7, width = 7, units = "in")
 
+# Tidy environment
+rm(list = c("attitude_cols"))
+
 ## -------------------------------------------- ##
 # Promising Opportunities Graph ----
 ## -------------------------------------------- ##
 
-unique(svy_v01$PromisingOpps)
+# Prep the data for graphing
+prom_df <- prep_select_all(df = svy_v01, q = "PromisingOpps") %>% 
+  dplyr::mutate(value = stringr::str_wrap(string = value, width = 40)) %>% 
+  dplyr::mutate(value = factor(value, levels = rev(unique(value))))
 
+# Check structure
+dplyr::glimpse(prom_df)
+
+# Make graph
+ggplot(data = prom_df, aes(x = percent, y = value, 
+    fill = value, color = 'x')) +
+  geom_bar(stat = "identity") +
+  scale_color_manual(values = "#000") +
+  labs(x = "Percent Respondents (%)", y = "",
+    title = stringr::str_wrap(string = lkup$question_text[lkup$name_in_data == "PromisingOpps"], width = 70)) +
+  guides(color = "none") +
+  supportR::theme_lyon(title_size = 20, text_size = 16) +
+    theme(axis.title.y = element_blank(),
+      legend.title = element_blank(),
+      legend.position = "none")
+
+# Export locally
+ggsave(file.path("graphs", "survey-02_opportunities.png"),
+  height = 15, width = 15, units = "in")
+  
+# Tidy environment
+rm(list = c("prom_df"))
 
 ## -------------------------------------------- ##
 # Challenges Graph ----
 ## -------------------------------------------- ##
 
-unique(svy_v01$Challenges)
+# Prep the data for graphing
+chal_df <- prep_select_all(df = svy_v01, q = "Challenges") %>% 
+  dplyr::mutate(value = stringr::str_wrap(string = value, width = 40)) %>% 
+  dplyr::mutate(value = factor(value, levels = rev(unique(value))))
 
+# Check structure
+dplyr::glimpse(chal_df)
+
+# Make graph
+ggplot(data = chal_df, aes(x = percent, y = value, 
+    fill = value, color = 'x')) +
+  geom_bar(stat = "identity") +
+  scale_color_manual(values = "#000") +
+  labs(x = "Percent Respondents (%)", y = "",
+    title = stringr::str_wrap(string = lkup$question_text[lkup$name_in_data == "Challenges"], width = 70)) +
+  guides(color = "none") +
+  supportR::theme_lyon(title_size = 20, text_size = 16) +
+    theme(axis.title.y = element_blank(),
+      legend.title = element_blank(),
+      legend.position = "none")
+
+# Export locally
+ggsave(file.path("graphs", "survey-02_challenges.png"),
+  height = 15, width = 15, units = "in")
+  
+# Tidy environment
+rm(list = c("chal_df"))
 
 ## -------------------------------------------- ##
 # Policies Graph ----
@@ -172,6 +356,9 @@ svy_v01 %>%
 ggsave(file.path("graphs", "survey-02_policies.png"),
   height = 7, width = 7, units = "in")
 
+# Tidy environment
+rm(list = c("policy_cols"))
+  
 ## -------------------------------------------- ##
 # Career Stage Graph ----
 ## -------------------------------------------- ##
@@ -209,6 +396,9 @@ svy_v01 %>%
 ggsave(file.path("graphs", "survey-02_career-stage.png"),
   height = 7, width = 7, units = "in")
 
+# Tidy environment
+rm(list = c("stage_cols"))
+  
 ## -------------------------------------------- ##
 # Professional Role Graph ----
 ## -------------------------------------------- ##
