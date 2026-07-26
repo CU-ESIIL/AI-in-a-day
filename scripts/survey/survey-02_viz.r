@@ -39,7 +39,7 @@ ai_freq_cols <- c("Daily" = "#e9ecef", "Weekly" = "#adb5bd",
   "Monthly" = "#6c757d", "Yearly" = "#343a40", "Never" = "#000")
 
 # Actually make graph
-graph_freqs(df = svy_v01, q = "AIUse_Freq") +
+graph_select_one(df = svy_v01, q = "AIUse_Freq") +
   geom_hline(yintercept = 75, linetype = 3, color = "#000") +
   geom_hline(yintercept = 50, linetype = 2, color = "#fff") +
   geom_hline(yintercept = 25, linetype = 3, color = "#fff") +
@@ -100,19 +100,20 @@ attitude_cols <- c("Opposed to GenAI" = "#8f2d56", "Cautious" = "#d81159",
 
 # Actually make graph
 svy_v01 %>% 
-  dplyr::mutate(Gen_Attitude = gsub("Other \\(please specify\\)", 
-    replacement = "Other",x = Gen_Attitude)) %>% 
-graph_freqs(df = ., q = "Gen_Attitude") +
-  geom_hline(yintercept = 75, linetype = 3, color = "#000") +
-  geom_hline(yintercept = 50, linetype = 2, color = "#000") +
-  geom_hline(yintercept = 25, linetype = 3, color = "#000") +
-  scale_fill_manual(values = attitude_cols) +
-  labs(x = "", y = "Percent Responses (%)",
-    title = stringr::str_wrap(string = lkup$question_text[lkup$name_in_data == "Gen_Attitude"], width = 70)) +
-  supportR::theme_lyon(title_size = 20, text_size = 16) +
-  theme(axis.text.x = element_blank(),
-    axis.title.x = element_blank(),
-    legend.title = element_blank())
+  dplyr::mutate(Gen_Attitude = dplyr::case_when(
+    Gen_Attitude == "Other (please specify)" ~ "Other",
+    TRUE ~ Gen_Attitude)) %>%
+  graph_select_one(df = ., q = "Gen_Attitude") +
+    geom_hline(yintercept = 75, linetype = 3, color = "#000") +
+    geom_hline(yintercept = 50, linetype = 2, color = "#000") +
+    geom_hline(yintercept = 25, linetype = 3, color = "#000") +
+    scale_fill_manual(values = attitude_cols) +
+    labs(x = "", y = "Percent Responses (%)",
+      title = stringr::str_wrap(string = lkup$question_text[lkup$name_in_data == "Gen_Attitude"], width = 70)) +
+    supportR::theme_lyon(title_size = 20, text_size = 16) +
+    theme(axis.text.x = element_blank(),
+      axis.title.x = element_blank(),
+      legend.title = element_blank())
 
 # Export locally
 ggsave(file.path("graphs", "survey-02_general-attitude.png"),
@@ -151,21 +152,21 @@ policy_cols <- c(
 
 # Actually make graph
 svy_v01 %>% 
-  dplyr::mutate(Policies = gsub("Other \\(please specify\\)", 
-    replacement = "Other", x = Policies)) %>% 
-  dplyr::mutate(Policies = gsub("There are not any policies or guidelines at my institution", 
-    replacement = "No institutional policy", x = Policies)) %>% 
-graph_freqs(df = ., q = "Policies") +
-  geom_hline(yintercept = 75, linetype = 3, color = "#000") +
-  geom_hline(yintercept = 50, linetype = 2, color = "#000") +
-  geom_hline(yintercept = 25, linetype = 3, color = "#000") +
-  scale_fill_manual(values = policy_cols) +
-  labs(x = "", y = "Percent Responses (%)",
-    title = stringr::str_wrap(string = lkup$question_text[lkup$name_in_data == "Policies"], width = 70)) +
-  supportR::theme_lyon(title_size = 20, text_size = 16) +
-  theme(axis.text.x = element_blank(),
-    axis.title.x = element_blank(),
-    legend.title = element_blank())
+  dplyr::mutate(Policies = dplyr::case_when(
+    Policies == "Other (please specify)" ~ "Other",
+    Policies == "There are not any policies or guidelines at my institution" ~ "No institutional policy",
+    TRUE ~ Policies)) %>% 
+  graph_select_one(df = ., q = "Policies") +
+    geom_hline(yintercept = 75, linetype = 3, color = "#000") +
+    geom_hline(yintercept = 50, linetype = 2, color = "#000") +
+    geom_hline(yintercept = 25, linetype = 3, color = "#000") +
+    scale_fill_manual(values = policy_cols) +
+    labs(x = "", y = "Percent Responses (%)",
+      title = stringr::str_wrap(string = lkup$question_text[lkup$name_in_data == "Policies"], width = 70)) +
+    supportR::theme_lyon(title_size = 20, text_size = 16) +
+    theme(axis.text.x = element_blank(),
+      axis.title.x = element_blank(),
+      legend.title = element_blank())
 
 # Export locally
 ggsave(file.path("graphs", "survey-02_policies.png"),
@@ -192,17 +193,17 @@ svy_v01 %>%
     Career_Stage == "Early Career Stage (1–9 years of experience post-degree)" ~ "Early (1-9 years post-degree)",
     Career_Stage == "Mid-Career Stage (10–25 years of experience)" ~ "Mid-Career (10-25 years)",
     Career_Stage == "Mature Career Stage (26+ years of experience)" ~ "Mature (26+ Years)")) %>% 
-graph_freqs(df = ., q = "Career_Stage") +
-  geom_hline(yintercept = 75, linetype = 3, color = "#000") +
-  geom_hline(yintercept = 50, linetype = 2, color = "#000") +
-  geom_hline(yintercept = 25, linetype = 3, color = "#000") +
-  scale_fill_manual(values = stage_cols) +
-  labs(x = "", y = "Percent Responses (%)",
-    title = stringr::str_wrap(string = lkup$question_text[lkup$name_in_data == "Career_Stage"], width = 70)) +
-  supportR::theme_lyon(title_size = 20, text_size = 16) +
-  theme(axis.text.x = element_blank(),
-    axis.title.x = element_blank(),
-    legend.title = element_blank())
+  graph_select_one(df = ., q = "Career_Stage") +
+    geom_hline(yintercept = 75, linetype = 3, color = "#000") +
+    geom_hline(yintercept = 50, linetype = 2, color = "#000") +
+    geom_hline(yintercept = 25, linetype = 3, color = "#000") +
+    scale_fill_manual(values = stage_cols) +
+    labs(x = "", y = "Percent Responses (%)",
+      title = stringr::str_wrap(string = lkup$question_text[lkup$name_in_data == "Career_Stage"], width = 70)) +
+    supportR::theme_lyon(title_size = 20, text_size = 16) +
+    theme(axis.text.x = element_blank(),
+      axis.title.x = element_blank(),
+      legend.title = element_blank())
 
 # Export locally
 ggsave(file.path("graphs", "survey-02_career-stage.png"),
@@ -235,17 +236,17 @@ svy_v01 %>%
   dplyr::mutate(Work_Sector = dplyr::case_when(
     Work_Sector == "Other (please specify)" ~ "Other",
     TRUE ~ Work_Sector)) %>% 
-graph_freqs(df = ., q = "Work_Sector") +
-  # geom_hline(yintercept = 75, linetype = 3, color = "#000") +
-  # geom_hline(yintercept = 50, linetype = 2, color = "#000") +
-  geom_hline(yintercept = 25, linetype = 3, color = "#000") +
-  scale_fill_manual(values = sector_cols) +
-  labs(x = "", y = "Percent Responses (%)",
-    title = stringr::str_wrap(string = lkup$question_text[lkup$name_in_data == "Work_Sector"], width = 70)) +
-  supportR::theme_lyon(title_size = 20, text_size = 16) +
-  theme(axis.text.x = element_blank(),
-    axis.title.x = element_blank(),
-    legend.title = element_blank())
+  graph_select_one(df = ., q = "Work_Sector") +
+    # geom_hline(yintercept = 75, linetype = 3, color = "#000") +
+    # geom_hline(yintercept = 50, linetype = 2, color = "#000") +
+    geom_hline(yintercept = 25, linetype = 3, color = "#000") +
+    scale_fill_manual(values = sector_cols) +
+    labs(x = "", y = "Percent Responses (%)",
+      title = stringr::str_wrap(string = lkup$question_text[lkup$name_in_data == "Work_Sector"], width = 70)) +
+    supportR::theme_lyon(title_size = 20, text_size = 16) +
+    theme(axis.text.x = element_blank(),
+      axis.title.x = element_blank(),
+      legend.title = element_blank())
 
 # Export locally
 ggsave(file.path("graphs", "survey-02_work-sector.png"),
@@ -273,17 +274,17 @@ svy_v01 %>%
     Formal_Ed == "4-year undergraduate degree (B.S., B.A., etc.)" ~ "4-Year",
     Formal_Ed == "Other (please specify)" ~ "Other",
     TRUE ~ Formal_Ed)) %>% 
-graph_freqs(df = ., q = "Formal_Ed") +
-  geom_hline(yintercept = 75, linetype = 3, color = "#000") +
-  geom_hline(yintercept = 50, linetype = 2, color = "#000") +
-  geom_hline(yintercept = 25, linetype = 3, color = "#000") +
-  scale_fill_manual(values = formal_ed_cols) +
-  labs(x = "", y = "Percent Responses (%)",
-    title = stringr::str_wrap(string = lkup$question_text[lkup$name_in_data == "Formal_Ed"], width = 70)) +
-  supportR::theme_lyon(title_size = 20, text_size = 16) +
-  theme(axis.text.x = element_blank(),
-    axis.title.x = element_blank(),
-    legend.title = element_blank())
+  graph_select_one(df = ., q = "Formal_Ed") +
+    geom_hline(yintercept = 75, linetype = 3, color = "#000") +
+    geom_hline(yintercept = 50, linetype = 2, color = "#000") +
+    geom_hline(yintercept = 25, linetype = 3, color = "#000") +
+    scale_fill_manual(values = formal_ed_cols) +
+    labs(x = "", y = "Percent Responses (%)",
+      title = stringr::str_wrap(string = lkup$question_text[lkup$name_in_data == "Formal_Ed"], width = 70)) +
+    supportR::theme_lyon(title_size = 20, text_size = 16) +
+    theme(axis.text.x = element_blank(),
+      axis.title.x = element_blank(),
+      legend.title = element_blank())
 
 # Export locally
 ggsave(file.path("graphs", "survey-02_formal-education.png"),
@@ -296,16 +297,39 @@ ggsave(file.path("graphs", "survey-02_formal-education.png"),
 unique(svy_v01$Field)
 # <frequency!>
 
+# !!! Note: holding off on drafting this graph's code until we get more responses !!!
 
 ## -------------------------------------------- ##
 # Data Science Frequency Graph ----
 ## -------------------------------------------- ##
 
+# Check contents
 unique(svy_v01$DS_Freq)
-# <frequency!>
 
-# !!! Note: holding off on drafting this graph's code until we get more responses !!!
+# Make custom color palette
+ds_freq_cols <- c("Daily" = "#e9ecef", "Weekly" = "#adb5bd", 
+  "Monthly" = "#6c757d", "Yearly" = "#343a40", "Never" = "#000")
 
+# Actually make graph
+svy_v01 %>% 
+  dplyr::mutate(DS_Freq = dplyr::case_when(
+    DS_Freq == "I do not use data science in my research/role" ~ "Never",
+    TRUE ~ DS_Freq)) %>% 
+  graph_select_one(df = ., q = "DS_Freq") +
+    geom_hline(yintercept = 75, linetype = 3, color = "#000") +
+    geom_hline(yintercept = 50, linetype = 2, color = "#fff") +
+    geom_hline(yintercept = 25, linetype = 3, color = "#fff") +
+    scale_fill_manual(values = ds_freq_cols) +
+    labs(x = "", y = "Percent Responses (%)",
+      title = stringr::str_wrap(string = lkup$question_text[lkup$name_in_data == "DS_Freq"], width = 70)) +
+    supportR::theme_lyon(title_size = 20, text_size = 16) +
+    theme(axis.text.x = element_blank(),
+      axis.title.x = element_blank(),
+      legend.title = element_blank())
+
+# Export locally
+ggsave(file.path("graphs", "survey-02_data-science-frequency.png"),
+  height = 7, width = 7, units = "in")
 
 ## -------------------------------------------- ##
 # Gender Graph ----
@@ -327,7 +351,7 @@ svy_v01 %>%
   dplyr::mutate(Gender = dplyr::case_when(
     Gender == "Prefer to self-identify:" ~ "Prefer to self-identify",
     TRUE ~ Gender)) %>% 
-graph_freqs(df = ., q = "Gender") +
+graph_select_one(df = ., q = "Gender") +
   geom_hline(yintercept = 75, linetype = 3, color = "#000") +
   geom_hline(yintercept = 50, linetype = 2, color = "#000") +
   geom_hline(yintercept = 25, linetype = 3, color = "#000") +
@@ -362,7 +386,7 @@ svy_v01 %>%
   dplyr::mutate(LGBTQIA = dplyr::case_when(
     LGBTQIA == "Prefer to self-identify:" ~ "Prefer to self-identify",
     TRUE ~ LGBTQIA)) %>% 
-graph_freqs(df = ., q = "LGBTQIA") +
+graph_select_one(df = ., q = "LGBTQIA") +
   geom_hline(yintercept = 75, linetype = 3, color = "#000") +
   geom_hline(yintercept = 50, linetype = 2, color = "#000") +
   geom_hline(yintercept = 25, linetype = 3, color = "#000") +
@@ -398,7 +422,7 @@ neuro_cols <- c(
   "Prefer not to answer" = "#000")
 
 # Actually make graph
-graph_freqs(df = svy_v01, q = "Neurodiverse") +
+graph_select_one(df = svy_v01, q = "Neurodiverse") +
   geom_hline(yintercept = 75, linetype = 3, color = "#000") +
   geom_hline(yintercept = 50, linetype = 2, color = "#000") +
   geom_hline(yintercept = 25, linetype = 3, color = "#000") +
@@ -435,7 +459,7 @@ first_gen_cols <- c(
   "Prefer not to answer" = "#000")
 
 # Actually make graph
-graph_freqs(df = svy_v01, q = "FirstGen") +
+graph_select_one(df = svy_v01, q = "FirstGen") +
   geom_hline(yintercept = 75, linetype = 3, color = "#000") +
   geom_hline(yintercept = 50, linetype = 2, color = "#000") +
   geom_hline(yintercept = 25, linetype = 3, color = "#000") +
