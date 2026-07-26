@@ -1,0 +1,86 @@
+## -------------------------------------------- ##
+# Survey Data Tidying
+## -------------------------------------------- ##
+# Purpose
+## Get the data into tidy format for analysis/visualization
+## !!! NOTE: raw survey data are stored in a Box folder only IRB-approved group members have access to !!!
+## !!! You must _manually_ download that file and place it in a local "data" folder in this project's folder !!!
+
+# Load libraries
+# install.packages("librarian")
+librarian::shelf(tidyverse)
+
+# Get set up
+source(file.path("scripts", "survey", "-setup.r"))
+
+# Clear environment/collect garbage
+rm(list = ls()); gc()
+
+## -------------------------------------------- ##
+# Load Data ----
+## -------------------------------------------- ##
+
+# Define data names (for easy future updating)
+labs_file <- "AI in a Day - Perspectives Survey_July 24, 2026_labels.csv"
+vals_file <- "AI in a Day - Perspectives Survey_July 24, 2026_values.csv"
+
+# Read in the data where response labels are retained
+labs_v01 <- read.csv(file.path("data", labs_file))
+
+# Check structure
+dplyr::glimpse(labs_v01)
+
+# Read in data where responses are given number codes (for questions on scales)
+vals_v01 <- read.csv(file.path("data", vals_file))
+
+# Check structure
+dplyr::glimpse(vals_v01)
+
+## -------------------------------------------- ##
+# Combine Data ----
+## -------------------------------------------- ##
+
+# Streamline the values data for combination with labels data
+vals_v02 <- vals_v01 %>% 
+  dplyr::filter(StartDate != "Start Date" & 
+    stringr::str_detect(string = StartDate, pattern = "ImportId") != TRUE) %>% 
+  dplyr::select(-dplyr::ends_with(match = "_TEXT", ignore.case = FALSE)) %>% 
+  dplyr::select(-dplyr::all_of(c("AI_tools", "GenAI_Resources")), -dplyr::starts_with("LOs_")) %>% 
+  dplyr::select(StartDate:ConsentQ, 
+    dplyr::contains(c("AIUse_Freq", "Gen_Attitude", "Policies", 
+      "Career_Stage", "Work_Sector", "Formal_Ed", "Field", "DS_Freq",
+      "Gender", "LGBTQIA",  "Neurodiverse", "Caregiver", "FirstGen"))) %>% 
+  dplyr::rename_with(.fn = ~ paste0(., "__value"),
+    .cols = -StartDate:-ConsentQ) %>% 
+  dplyr::mutate(dplyr::across(.cols = dplyr::ends_with("__value"), .fns = as.numeric))
+
+# Check structure
+dplyr::glimpse(vals_v02)
+
+# Join the two datasets by responseId and drop duplicate cols
+svy_v01 <- labs_v01 %>% 
+  dplyr::full_join(x = ., y = vals_v02, by = c("ResponseId")) %>% 
+  dplyr::select(-dplyr::ends_with(".y"))
+
+# Check structure
+dplyr::glimpse(svy_v01)
+
+
+
+
+## -------------------------------------------- ##
+# Export Tidied Data ----
+## -------------------------------------------- ##
+
+# Make a final data object
+svy_v99 <- svy_v01
+
+# Check its structure
+dplyr::glimpse(svy_v99)
+
+# Export locally
+write.csv(x = svy_v99, row.names = FALSE, na = '',
+  file = file.path("data", "survey-01_tidied.csv"))
+
+
+# End ----
