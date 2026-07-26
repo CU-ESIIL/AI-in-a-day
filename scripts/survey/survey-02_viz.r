@@ -567,7 +567,7 @@ gender_cols <- c(
   "Woman" = "#ff193b",
   "Non-binary" = "#ffc719",
   "Man" = "#9529ff",
-  "Prefer to self-identify" = "#343a40",
+  "Prefer to self-identify" = "#adb5bd",
   "Prefer not to answer" = "#000")
 
 # Actually make graph
@@ -575,20 +575,20 @@ svy_v01 %>%
   dplyr::mutate(Gender = dplyr::case_when(
     Gender == "Prefer to self-identify:" ~ "Prefer to self-identify",
     TRUE ~ Gender)) %>% 
-graph_select_one(df = ., q = "Gender") +
-  geom_hline(yintercept = 75, linetype = 3, color = "#000") +
-  geom_hline(yintercept = 50, linetype = 2, color = "#000") +
-  geom_hline(yintercept = 25, linetype = 3, color = "#000") +
-  scale_fill_manual(values = gender_cols) +
-  labs(x = "", y = "Percent Responses (%)",
-    title = stringr::str_wrap(string = lkup$question_text[lkup$name_in_data == "Gender"], width = 70)) +
-  supportR::theme_lyon(title_size = 20, text_size = 16) +
-  theme(axis.text.x = element_blank(),
-    axis.title.x = element_blank(),
-    legend.title = element_blank())
+  graph_select_one(df = ., q = "Gender") +
+    geom_hline(yintercept = 75, linetype = 3, color = "#000") +
+    geom_hline(yintercept = 50, linetype = 2, color = "#000") +
+    geom_hline(yintercept = 25, linetype = 3, color = "#000") +
+    scale_fill_manual(values = gender_cols) +
+    labs(x = "", y = "Percent Responses (%)",
+      title = stringr::str_wrap(string = lkup$question_text[lkup$name_in_data == "Gender"], width = 70)) +
+    supportR::theme_lyon(title_size = 20, text_size = 16) +
+    theme(axis.text.x = element_blank(),
+      axis.title.x = element_blank(),
+      legend.title = element_blank())
 
 # Export locally
-ggsave(file.path("graphs", "survey-02_gender.png"),
+ggsave(file.path("graphs", "survey-02_demographics_gender.png"),
   height = 7, width = 7, units = "in")
 
 # Tidy environment
@@ -605,7 +605,7 @@ unique(svy_v01$LGBTQIA)
 lgbt_cols <- c(
   "No" = "#826aed",
   "Yes" = "#ffb7ff",
-  "Prefer to self-identify" = "#343a40",
+  "Prefer to self-identify" = "#adb5bd",
   "Prefer not to answer" = "#000")
 
 # Actually make graph
@@ -613,20 +613,20 @@ svy_v01 %>%
   dplyr::mutate(LGBTQIA = dplyr::case_when(
     LGBTQIA == "Prefer to self-identify:" ~ "Prefer to self-identify",
     TRUE ~ LGBTQIA)) %>% 
-graph_select_one(df = ., q = "LGBTQIA") +
-  geom_hline(yintercept = 75, linetype = 3, color = "#000") +
-  geom_hline(yintercept = 50, linetype = 2, color = "#000") +
-  geom_hline(yintercept = 25, linetype = 3, color = "#000") +
-  scale_fill_manual(values = lgbt_cols) +
-  labs(x = "", y = "Percent Responses (%)",
-    title = stringr::str_wrap(string = lkup$question_text[lkup$name_in_data == "LGBTQIA"], width = 70)) +
-  supportR::theme_lyon(title_size = 20, text_size = 16) +
-  theme(axis.text.x = element_blank(),
-    axis.title.x = element_blank(),
-    legend.title = element_blank())
+  graph_select_one(df = ., q = "LGBTQIA") +
+    geom_hline(yintercept = 75, linetype = 3, color = "#000") +
+    geom_hline(yintercept = 50, linetype = 2, color = "#000") +
+    geom_hline(yintercept = 25, linetype = 3, color = "#000") +
+    scale_fill_manual(values = lgbt_cols) +
+    labs(x = "", y = "Percent Responses (%)",
+      title = stringr::str_wrap(string = lkup$question_text[lkup$name_in_data == "LGBTQIA"], width = 70)) +
+    supportR::theme_lyon(title_size = 20, text_size = 16) +
+    theme(axis.text.x = element_blank(),
+      axis.title.x = element_blank(),
+      legend.title = element_blank())
 
 # Export locally
-ggsave(file.path("graphs", "survey-02_lgbtqia.png"),
+ggsave(file.path("graphs", "survey-02_demographics_lgbtqia.png"),
   height = 7, width = 7, units = "in")
 
 # Tidy environment
@@ -658,7 +658,7 @@ ggplot(data = race_df, aes(x = percent, y = value,
       legend.position = "none")
 
 # Export locally
-ggsave(file.path("graphs", "survey-02_race-ethnicity.png"),
+ggsave(file.path("graphs", "survey-02_demographics_race-ethnicity.png"),
   height = 15, width = 15, units = "in")
   
 # Tidy environment
@@ -691,7 +691,7 @@ graph_select_one(df = svy_v01, q = "Neurodiverse") +
     legend.title = element_blank())
 
 # Export locally
-ggsave(file.path("graphs", "survey-02_neurodiverse.png"),
+ggsave(file.path("graphs", "survey-02_demographics_neurodiverse.png"),
   height = 7, width = 7, units = "in")
 
 # Tidy environment
@@ -732,7 +732,7 @@ svy_v01 %>%
       legend.title = element_blank())
 
 # Export locally
-ggsave(file.path("graphs", "survey-02_caregiver.png"),
+ggsave(file.path("graphs", "survey-02_demographics_caregiver.png"),
   height = 7, width = 7, units = "in")
 
 # Tidy environment
@@ -765,7 +765,7 @@ graph_select_one(df = svy_v01, q = "FirstGen") +
     legend.title = element_blank())
 
 # Export locally
-ggsave(file.path("graphs", "survey-02_first-gen.png"),
+ggsave(file.path("graphs", "survey-02_demographics_first-gen.png"),
   height = 7, width = 7, units = "in")
 
 # Tidy environment
