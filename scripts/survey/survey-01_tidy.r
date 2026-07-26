@@ -8,7 +8,7 @@
 
 # Load libraries
 # install.packages("librarian")
-librarian::shelf(tidyverse, psych)
+librarian::shelf(tidyverse, psych, supportR)
 
 # Get set up
 source(file.path("scripts", "survey", "-setup.r"))
@@ -63,11 +63,15 @@ dplyr::glimpse(lookup)
 vals_v02 <- vals_v01 %>% 
   dplyr::filter(StartDate != "Start Date" & 
     stringr::str_detect(string = StartDate, pattern = "ImportId") != TRUE) %>% 
-  dplyr::select(ResponseId, dplyr::all_of(select_qs$name_in_data)) %>% 
+  dplyr::select(ResponseId, dplyr::all_of(select_qs$name_in_data), dplyr::ends_with("_Freq"),
+    Career_Stage, Prof_Role, Neurodiverse:FirstGen) %>% 
   dplyr::select(-dplyr::where(fn = ~ any(stringr::str_detect(string = ., pattern = ",")))) %>% 
   dplyr::rename_with(.fn = ~ paste0(., "__value"),
     .cols = -ResponseId) %>% 
   dplyr::mutate(dplyr::across(.cols = dplyr::ends_with("__value"), .fns = as.numeric))
+
+# What questions are lost via this?
+setdiff(x = names(vals_v01), y = gsub(pattern = "__value", replacement = "", names(vals_v02)))
 
 # Check structure
 dplyr::glimpse(vals_v02)
@@ -105,13 +109,35 @@ svy_v02 <- svy_v01 %>%
 # Check structure
 dplyr::glimpse(svy_v02)
 
+## -------------------------------------------- ##
+# Reorder Columns ----
+## -------------------------------------------- ##
+
+# Get columns into intuitive order
+svy_v03 <- svy_v02 %>% 
+  dplyr::relocate(dplyr::starts_with("AIUse_Freq"), .after = ResponseId) %>% 
+  dplyr::relocate(dplyr::starts_with("Gen_Attitude"), .after = LOs_3) %>% 
+  dplyr::relocate(dplyr::starts_with("Policies"), .before = Career_Stage) %>% 
+  dplyr::relocate(dplyr::starts_with("Career_Stage"), .before = Prof_Role) %>% 
+  dplyr::relocate(dplyr::starts_with("Work_Sector"), .before = Formal_Ed) %>% 
+  dplyr::relocate(dplyr::starts_with("Formal_Ed"), .before = Field) %>% 
+  dplyr::relocate(dplyr::starts_with("Field"), .before = DS_Freq) %>% 
+  dplyr::relocate(dplyr::starts_with("DS_Freq"), .before = GenAI_Resources) %>% 
+  dplyr::relocate(dplyr::starts_with("Gender"), .after = GenAI_Resources) %>% 
+  dplyr::relocate(dplyr::starts_with("LGBTQIA"), .before = Race_Ethnicity) %>% 
+  dplyr::relocate(dplyr::starts_with("Neurodiverse"), .before = Caregiver) %>% 
+  dplyr::relocate(dplyr::starts_with("Caregiver"), .before = FirstGen) %>% 
+  dplyr::relocate(dplyr::starts_with("FirstGen"), .after = dplyr::everything())
+
+# Check structure
+dplyr::glimpse(svy_v03)
 
 ## -------------------------------------------- ##
 # Export Outputs ----
 ## -------------------------------------------- ##
 
 # Make a final data object
-svy_v99 <- svy_v01
+svy_v99 <- svy_v03
 
 # Check its structure
 dplyr::glimpse(svy_v99)
