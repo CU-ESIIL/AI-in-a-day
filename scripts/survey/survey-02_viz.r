@@ -34,17 +34,25 @@ lkup <- read.csv(file.path("data", "question-lookup-table.csv"))
 # AI/Data Science Graphs ----
 ## -------------------------------------------- ##
 
+ai_freq_cols <- c("Daily" = "#e9ecef", "Weekly" = "#adb5bd", 
+  "Monthly" = "#6c757d", "Yearly" = "#343a40", "Never" = "#000")
+
 # AI frequency question
 graph_freqs(df = svy_v01, q = "AIUse_Freq") +
-  geom_hline(yintercept = 25, linetype = 3) +
-  geom_hline(yintercept = 50, linetype = 2) +
-  geom_hline(yintercept = 75, linetype = 3) +
+  geom_hline(yintercept = 75, linetype = 3, color = "#000") +
+  geom_hline(yintercept = 50, linetype = 2, color = "#fff") +
+  geom_hline(yintercept = 25, linetype = 3, color = "#fff") +
+  scale_fill_manual(values = ai_freq_cols) +
   labs(x = "", y = "Percent Responses (%)",
-    title = lkup$question_text[lkup$name_in_data == "AIUse_Freq"]) +
+    title = stringr::str_wrap(string = lkup$question_text[lkup$name_in_data == "AIUse_Freq"], width = 45)) +
   supportR::theme_lyon(title_size = 20, text_size = 16) +
   theme(axis.text.x = element_blank(),
     axis.title.x = element_blank(),
     legend.title = element_blank())
+
+# Export locally
+ggsave(file.path("graphs", "survey-02_ai-frequency.png"),
+  height = 5, width = 5, units = "in")
 
 ## -------------------------------------------- ##
 # Demographic Graphs ----
