@@ -7,7 +7,7 @@
 #' 
 #' importFrom magrittr %>%
 #' 
-graph_freqs <- function(df = NULL, q = NULL){
+graph_select_one <- function(df = NULL, q = NULL){
 
   # Error checks for 'df'
   if(is.null(df) || "data.frame" %in% class(df) != TRUE)
