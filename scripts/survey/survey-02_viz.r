@@ -403,8 +403,33 @@ rm(list = c("stage_cols"))
 # Professional Role Graph ----
 ## -------------------------------------------- ##
 
-unique(svy_v01$Prof_Role)
+# Prep the data for graphing
+role_df <- prep_select_all(df = svy_v01, q = "Prof_Role") %>% 
+  dplyr::mutate(value = stringr::str_wrap(string = value, width = 40)) %>% 
+  dplyr::mutate(value = factor(value, levels = rev(unique(value))))
 
+# Check structure
+dplyr::glimpse(role_df)
+
+# Make graph
+ggplot(data = role_df, aes(x = percent, y = value, 
+    fill = value, color = 'x')) +
+  geom_bar(stat = "identity") +
+  scale_color_manual(values = "#000") +
+  labs(x = "Percent Respondents (%)", y = "",
+    title = stringr::str_wrap(string = lkup$question_text[lkup$name_in_data == "Prof_Role"], width = 70)) +
+  guides(color = "none") +
+  supportR::theme_lyon(title_size = 20, text_size = 16) +
+    theme(axis.title.y = element_blank(),
+      legend.title = element_blank(),
+      legend.position = "none")
+
+# Export locally
+ggsave(file.path("graphs", "survey-02_professional-role.png"),
+  height = 15, width = 15, units = "in")
+  
+# Tidy environment
+rm(list = c("role_df"))
 
 ## -------------------------------------------- ##
 # Work Sector Graph ----
@@ -442,6 +467,9 @@ svy_v01 %>%
 ggsave(file.path("graphs", "survey-02_work-sector.png"),
   height = 7, width = 7, units = "in")
 
+# Tidy environment
+rm(list = c("sector_cols"))
+  
 ## -------------------------------------------- ##
 # Formal Education Graph ----
 ## -------------------------------------------- ##
@@ -479,6 +507,9 @@ svy_v01 %>%
 # Export locally
 ggsave(file.path("graphs", "survey-02_formal-education.png"),
   height = 7, width = 7, units = "in")
+
+# Tidy environment
+rm(list = c("formal_ed_cols"))
 
 ## -------------------------------------------- ##
 # Field Graph ----
@@ -521,6 +552,9 @@ svy_v01 %>%
 ggsave(file.path("graphs", "survey-02_data-science-frequency.png"),
   height = 7, width = 7, units = "in")
 
+# Tidy environment
+rm(list = c("ds_freq_cols"))
+  
 ## -------------------------------------------- ##
 # Gender Graph ----
 ## -------------------------------------------- ##
@@ -557,6 +591,9 @@ graph_select_one(df = ., q = "Gender") +
 ggsave(file.path("graphs", "survey-02_gender.png"),
   height = 7, width = 7, units = "in")
 
+# Tidy environment
+rm(list = c("gender_cols"))
+  
 ## -------------------------------------------- ##
 # LGBT Graph ----
 ## -------------------------------------------- ##
@@ -592,11 +629,40 @@ graph_select_one(df = ., q = "LGBTQIA") +
 ggsave(file.path("graphs", "survey-02_lgbtqia.png"),
   height = 7, width = 7, units = "in")
 
+# Tidy environment
+rm(list = c("lgbt_cols"))
+
 ## -------------------------------------------- ##
 # Race/Ethnicity Graph ----
 ## -------------------------------------------- ##
 
-unique(svy_v01$Race_Ethnicity)
+# Prep the data for graphing
+race_df <- prep_select_all(df = svy_v01, q = "Race_Ethnicity") %>% 
+  dplyr::mutate(value = stringr::str_wrap(string = value, width = 40)) %>% 
+  dplyr::mutate(value = factor(value, levels = rev(unique(value))))
+
+# Check structure
+dplyr::glimpse(race_df)
+
+# Make graph
+ggplot(data = race_df, aes(x = percent, y = value, 
+    fill = value, color = 'x')) +
+  geom_bar(stat = "identity") +
+  scale_color_manual(values = "#000") +
+  labs(x = "Percent Respondents (%)", y = "",
+    title = stringr::str_wrap(string = lkup$question_text[lkup$name_in_data == "Race_Ethnicity"], width = 70)) +
+  guides(color = "none") +
+  supportR::theme_lyon(title_size = 20, text_size = 16) +
+    theme(axis.title.y = element_blank(),
+      legend.title = element_blank(),
+      legend.position = "none")
+
+# Export locally
+ggsave(file.path("graphs", "survey-02_race-ethnicity.png"),
+  height = 15, width = 15, units = "in")
+  
+# Tidy environment
+rm(list = c("race_df"))
 
 ## -------------------------------------------- ##
 # Neurodiverse Graph ----
@@ -628,13 +694,50 @@ graph_select_one(df = svy_v01, q = "Neurodiverse") +
 ggsave(file.path("graphs", "survey-02_neurodiverse.png"),
   height = 7, width = 7, units = "in")
 
+# Tidy environment
+rm(list = c("neuro_cols"))
+  
 ## -------------------------------------------- ##
 # Caregiver Graph ----
 ## -------------------------------------------- ##
 
+# Check contents
 unique(svy_v01$Caregiver)
-# <frequency!>
 
+# Make custom color palette
+care_cols <- c(
+  "Not a caregiver" = "#000",
+  "In past but not now" = "#adb5bd",
+  "Primary caregiver" = "#e9ecef",
+  "Contributor/Secondary caregiver" = "#6c757d",
+  "Share equally with another" = "#343a40",
+  "Prefer not to answer" = "#fff")
+
+# Actually make graph
+svy_v01 %>% 
+  dplyr::mutate(Caregiver = dplyr::case_when(
+    Caregiver == "Caregiver in the past, but not currently" ~ "In past but not now",
+    Caregiver == "Share caregiving responsibilities equally with another person" ~ "Share equally with another",
+    TRUE ~ Caregiver)) %>% 
+  graph_select_one(df = ., q = "Caregiver") +
+    geom_hline(yintercept = 75, linetype = 3, color = "#000") +
+    geom_hline(yintercept = 50, linetype = 2, color = "#000") +
+    geom_hline(yintercept = 25, linetype = 3, color = "#000") +
+    scale_fill_manual(values = care_cols) +
+    labs(x = "", y = "Percent Responses (%)",
+      title = stringr::str_wrap(string = lkup$question_text[lkup$name_in_data == "Caregiver"], width = 70)) +
+    supportR::theme_lyon(title_size = 20, text_size = 16) +
+    theme(axis.text.x = element_blank(),
+      axis.title.x = element_blank(),
+      legend.title = element_blank())
+
+# Export locally
+ggsave(file.path("graphs", "survey-02_caregiver.png"),
+  height = 7, width = 7, units = "in")
+
+# Tidy environment
+rm(list = c("care_cols"))
+  
 ## -------------------------------------------- ##
 # FirstGen Graph ----
 ## -------------------------------------------- ##
@@ -665,4 +768,7 @@ graph_select_one(df = svy_v01, q = "FirstGen") +
 ggsave(file.path("graphs", "survey-02_first-gen.png"),
   height = 7, width = 7, units = "in")
 
+# Tidy environment
+rm(list = c("first_gen_cols"))
+  
 # End ----
