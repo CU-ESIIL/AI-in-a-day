@@ -55,18 +55,18 @@ dplyr::glimpse(lookup)
 # Combine Data ----
 ## -------------------------------------------- ##
 
-# Streamline the values data for combination with labels data
+# Identify 'selected choice' questions
+(select_qs <- lookup %>% 
+  dplyr::filter(stringr::str_detect(string = question_text, pattern = "Selected Choice")))
+
+# Streamline the values data to only numeric columns that only accept one answer
 vals_v02 <- vals_v01 %>% 
   dplyr::filter(StartDate != "Start Date" & 
     stringr::str_detect(string = StartDate, pattern = "ImportId") != TRUE) %>% 
-  dplyr::select(-dplyr::ends_with(match = "_TEXT", ignore.case = FALSE)) %>% 
-  dplyr::select(-dplyr::all_of(c("AI_tools", "GenAI_Resources")), -dplyr::starts_with("LOs_")) %>% 
-  dplyr::select(StartDate:ConsentQ, 
-    dplyr::contains(c("AIUse_Freq", "Gen_Attitude", "Policies", 
-      "Career_Stage", "Work_Sector", "Formal_Ed", "Field", "DS_Freq",
-      "Gender", "LGBTQIA",  "Neurodiverse", "Caregiver", "FirstGen"))) %>% 
+  dplyr::select(ResponseId, dplyr::all_of(select_qs$name_in_data)) %>% 
+  dplyr::select(-dplyr::where(fn = ~ any(stringr::str_detect(string = ., pattern = ",")))) %>% 
   dplyr::rename_with(.fn = ~ paste0(., "__value"),
-    .cols = -StartDate:-ConsentQ) %>% 
+    .cols = -ResponseId) %>% 
   dplyr::mutate(dplyr::across(.cols = dplyr::ends_with("__value"), .fns = as.numeric))
 
 # Check structure
