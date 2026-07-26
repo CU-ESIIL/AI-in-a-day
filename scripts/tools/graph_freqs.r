@@ -45,8 +45,10 @@ graph_freqs <- function(df = NULL, q = NULL){
       percent = round((response_count / total_responses) * 100, digits = 1))
   
   # Create a graph
-  simp_graph <- ggplot2::ggplot(data = df_v05, aes(x = as.character(q), y = percent, fill = .data[[q]])) +
-    geom_bar(stat = "identity")
+  simp_graph <- ggplot2::ggplot(data = df_v05, aes(x = as.character(q), y = percent, fill = .data[[q]], color = "x")) +
+    ggplot2::geom_bar(stat = "identity") +
+    ggplot2::scale_color_manual(values = "#000") +
+    ggplot2::guides(color = "none")
 
   # Return it
   return(simp_graph) }
