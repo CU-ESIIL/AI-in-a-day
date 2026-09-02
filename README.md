@@ -1,13 +1,3 @@
-# [Group Type] Group Title
+# "AI in a Day" Workshop Materials
 
-Principal Investigators: _Name, Name, ..._
-
-## Script Explanations
-
-Briefly describe the purpose of major scripts as you create them!
-
-- 
-
-## Supplementary Resources
-
-LTER Scientific Computing Team [website](https://lter.github.io/scicomp/) & NCEAS [Resources for Working Groups](https://www.nceas.ucsb.edu/working-group-resources)
+This repository hosts the workshop materials for the joint [NCEAS](https://www.nceas.ucsb.edu/)-[ESIIL](https://esiil.org/) synthesis working group.
