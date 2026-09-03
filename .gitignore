@@ -50,9 +50,9 @@ vignettes/*.pdf
 ~$*.docx
 
 # Image file types
-*.png
-*.jpeg
-*.jpg
+# *.png
+# *.jpeg
+# *.jpg
 
 # Spatial data file types
 ## Shapefile components
@@ -71,7 +71,7 @@ vignettes/*.pdf
 *.geojson
 
 # Other file types
-*.pdf
+# *.pdf
 *.zip
 *.rds
 *.rdata
