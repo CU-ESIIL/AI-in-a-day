@@ -21,7 +21,7 @@ website:
       - icon: github
         href: https://github.com/CU-ESIIL/AI-in-a-day_wkshp
   page-footer: 
-    center: "Copyright &copy; 2026, University of Colorado Boulder"
+    center: "Copyright &copy; 2026, University of Colorado Boulder <br> Materials made with [Quarto](https://quarto.org/)"
     background: secondary
 
 format:
