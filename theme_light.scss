@@ -1,14 +1,16 @@
 /*-- scss:defaults --*/
 
 // Colors
-/* Found on https://coolors.co/palettes/trending */
-$org-1: #ff9f1c;
-$org-2: #ffbf69;
-$mint-1: #2ec4b6;
-$mint-2: #cbf3f0;
-$url-blue: #4361ee;
+/* ESIIL brand colors */
+$esiil-1: #12324a;
+$esiil-2: #18445f;
+$esiil-3: #205b73;
+$esiil-4: #1d7e88;
+$esiil-5: #2d95a1;
+$esiil-5: #6f8f57;
 
 /* generally useful other colors */
+$url-blue: #4361ee;
 $cream: #F4F3EE;
 $charcoal: #191919;
 $gray-1: #8A817C;
@@ -20,16 +22,16 @@ $font-size: 25px;
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
 // Base document colors
-$navbar-bg: $org-1; // navbar
-$navbar-fg: $charcoal; // navbar foreground elements
-$navbar-hl: $org-2; // highlight color when hovering on a page
-$sidebar-bg: $org-2; // sidebar
+$navbar-bg: $esiil-2; // navbar
+$navbar-fg: $cream; // navbar foreground elements
+$navbar-hl: $esiil-4; // highlight color when hovering on a page
+$sidebar-bg: $esiil-5; // sidebar
 $sidebar-fg: $charcoal; // sidebar foreground elements
 $body-bg: $cream; // page background
 $body-color: $charcoal; // page text
-$footer-bg: $mint-1; // footer
+$footer-bg: $esiil-5; // footer
 $footer-fg: $charcoal; // footer text
-$link-color: $url-blue; // hyperlinks
+$link-color: $esiil-1; // hyperlinks
 
 // Code text
 $code-bg: $gray-2; // inline code background color
@@ -53,4 +55,4 @@ pre code:not(.sourceCode) { background-color: $gray-2; }
 // Navbar dropdown elements
 .dropdown-menu{
   --bs-dropdown-link-hover-color: #f4f3ee;
-  --bs-dropdown-link-hover-bg: #4AB2CB; }
+  --bs-dropdown-link-hover-bg: #1d7e88; }
