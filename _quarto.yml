@@ -18,6 +18,8 @@ website:
       - text: "Home"
         href: index.qmd
     right: 
+      - text: "Glossary"
+        href: glossary.qmd
       - icon: github
         href: https://github.com/CU-ESIIL/AI-in-a-day_wkshp
   page-footer: 
