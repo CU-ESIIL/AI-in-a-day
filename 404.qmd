@@ -1,0 +1,7 @@
+---
+title: "{{< fa file-circle-question >}} 404: Page Not Found"
+---
+
+The page you are looking for wasn't found. **You may want to return to the website homepage and use links therein to find what you were looking for.** 
+
+If you feel that you've reached this page because of an error, please post a {{< fa brands github >}} GitHub Issue on [this website's GitHub repository](https://github.com/CU-ESIIL/AI-in-a-day) or email an appropriate LWG team-member!
