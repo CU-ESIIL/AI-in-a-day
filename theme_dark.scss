@@ -1,0 +1,56 @@
+/*-- scss:defaults --*/
+
+// Colors
+/* Found on https://coolors.co/palettes/trending */
+$org-1: #ff9f1c;
+$org-2: #ffbf69;
+$mint-1: #2ec4b6;
+$mint-2: #cbf3f0;
+$url-blue: #4361ee;
+
+/* generally useful other colors */
+$cream: #F4F3EE;
+$charcoal: #191919;
+$gray-1: #8A817C;
+$gray-2: #BCB8B1;
+$gray-3: #d6d6d6;
+
+// Fonts
+$font-size: 25px;
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+// Base document colors
+$navbar-bg: $org-1; // navbar
+$navbar-fg: $charcoal; // navbar foreground elements
+$navbar-hl: $org-2; // highlight color when hovering on a page
+$sidebar-bg: $org-2; // sidebar
+$sidebar-fg: $charcoal; // sidebar foreground elements
+$body-bg: $cream; // page background
+$body-color: $charcoal; // page text
+$footer-bg: $mint-1; // footer
+$footer-fg: $charcoal; // footer text
+$link-color: $url-blue; // hyperlinks
+
+// Code text
+$code-bg: $gray-2; // inline code background color
+$code-color: $charcoal; // inline code text color
+$code-block-bg: $gray-2; // code block background color
+
+/*-- scss:rules --*/
+
+// Underline URLs
+.reveal .slide a { text-decoration: underline; }
+
+// Improve background contrast for code chunk ouput
+pre code:not(.sourceCode) { background-color: $gray-2; }
+
+// Improve contrast for active tabset panel (tab & tab content)
+.nav-tabs .nav-link.active { 
+  background-color: #FFF; 
+  color: $black; }
+.tab-content { background-color: #FFF; }
+
+// Navbar dropdown elements
+.dropdown-menu{
+  --bs-dropdown-link-hover-color: #f4f3ee;
+  --bs-dropdown-link-hover-bg: #4AB2CB; }
