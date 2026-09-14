@@ -10,7 +10,7 @@ execute:
 
 website:
   title: '"AI in a Day" Workshop Materials'
-  repo-url: https://github.com/CU-ESIIL/AI-in-a-day_wkshp
+  repo-url: https://github.com/CU-ESIIL/AI-in-a-day
   repo-actions: [issue]
   navbar:
     background: primary
@@ -21,7 +21,7 @@ website:
       - text: "Glossary"
         href: glossary.qmd
       - icon: github
-        href: https://github.com/CU-ESIIL/AI-in-a-day_wkshp
+        href: https://github.com/CU-ESIIL/AI-in-a-day
   page-footer: 
     center: "Copyright &copy; 2026, University of Colorado Boulder <br> Materials made with [Quarto](https://quarto.org/)"
     background: secondary
