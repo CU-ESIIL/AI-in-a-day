@@ -7,7 +7,7 @@ $esiil-2: #18445f;
 $esiil-3: #205b73;
 $esiil-4: #1d7e88;
 $esiil-5: #2d95a1;
-$esiil-5: #6f8f57;
+$esiil-6: #6f8f57;
 
 /* generally useful other colors */
 $url-blue: #4361ee;
@@ -24,12 +24,12 @@ $font-size: 25px;
 // Base document colors
 $navbar-bg: $esiil-2; // navbar
 $navbar-fg: $cream; // navbar foreground elements
-$navbar-hl: $esiil-4; // highlight color when hovering on a page
+$navbar-hl: $esiil-5; // highlight color when hovering on a page
 $sidebar-bg: $esiil-5; // sidebar
 $sidebar-fg: $charcoal; // sidebar foreground elements
 $body-bg: $charcoal; // page background
 $body-color: $cream; // page text
-$footer-bg: $esiil-5; // footer
+$footer-bg: $esiil-6; // footer
 $footer-fg: $charcoal; // footer text
 $link-color: $esiil-4; // hyperlinks
 
