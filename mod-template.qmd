@@ -2,5 +2,71 @@
 title: "Template Module"
 ---
 
+## {{< fa compass >}} Roadmap
 
+_Include copy of NE's diagram for how AIIAD relates to the broader scientific process with special emphasis on the part(s) that are related to this module._
+
+
+:::{.callout-caution icon="false" collapse="false"}
+## {{< fa brain >}} Learning Objectives
+
+After working through this lesson, you will be able to:
+
+- List of 3-5 learning objectives (use [Bloom's Taxonomy](https://en.wikipedia.org/wiki/Bloom%27s_taxonomy) verbs!)
+
+:::
+
+## Module Content Section 1
+
+
+
+## Module Content Section 2
+
+
+### Sub-Section 1
+
+### Sub-Section 2
+
+
+## Callout Block Examples
+
+:::{.callout-important icon="false" collapse="false"}
+## {{< fa triangle-exclamation >}} Error!
+
+Use this callout for likely issues (either technical or interpersonal) and how to solve them.
+:::
+
+
+:::{.callout-warning icon="false" collapse="false"}
+## {{< fa rocket >}} Activity
+
+Use this callout for instructions on an interactive activity.
+
+:::{.panel-tabset}
+### Phase 1
+
+Instructions for first phase of activity
+
+### Phase 2
+
+Instructions for second phase of activity
+
+### Phase _N_
+
+Instructions for N^th^ phase of activity.
+
+:::
+:::
+
+:::{.callout-tip icon="false" collapse="false"}
+## {{< fa users >}} Discussion Prompt
+
+Use this callout for discussion prompts and/or self-reflection questions.
+:::
+
+:::{.callout-note icon="false" collapse="false"}
+## {{< fa book-bookmark >}} Further Reading
+
+Use this callout to link to additional/external resources relevant to a given topic. This is preferable to [Quarto's footnote feature](https://quarto.org/docs/authoring/markdown-basics.html#footnotes) as this method (A) highlights the text within it and (B) emphasizes that these resources are _external_ (where a footnote could be used to relay more of our own opinions/context).
+:::
 
