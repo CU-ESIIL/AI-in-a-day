@@ -1,17 +1,63 @@
 [
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "AI in a Day Workshop",
+    "objectID": "mod-template.html",
+    "href": "mod-template.html",
+    "title": "Template Module",
     "section": "",
-    "text": "Check back later!"
+    "text": "Include copy of NE’s diagram for how AIIAD relates to the broader scientific process with special emphasis on the part(s) that are related to this module.\n\n\n\n\n\n\nCaution Learning Objectives\n\n\n\n\n\nAfter working through this lesson, you will be able to:\n\nList of 3-5 learning objectives (use Bloom’s Taxonomy verbs!)",
+    "crumbs": [
+      "Home",
+      "Workshop Modules",
+      "Template"
+    ]
   },
   {
-    "objectID": "index.html#under-construction",
-    "href": "index.html#under-construction",
-    "title": "AI in a Day Workshop",
+    "objectID": "mod-template.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120636f6d70617373203e7d7d-roadmap",
+    "href": "mod-template.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120636f6d70617373203e7d7d-roadmap",
+    "title": "Template Module",
     "section": "",
-    "text": "Check back later!"
+    "text": "Include copy of NE’s diagram for how AIIAD relates to the broader scientific process with special emphasis on the part(s) that are related to this module.\n\n\n\n\n\n\nCaution Learning Objectives\n\n\n\n\n\nAfter working through this lesson, you will be able to:\n\nList of 3-5 learning objectives (use Bloom’s Taxonomy verbs!)",
+    "crumbs": [
+      "Home",
+      "Workshop Modules",
+      "Template"
+    ]
+  },
+  {
+    "objectID": "mod-template.html#module-content-section-1",
+    "href": "mod-template.html#module-content-section-1",
+    "title": "Template Module",
+    "section": "Module Content Section 1",
+    "text": "Module Content Section 1",
+    "crumbs": [
+      "Home",
+      "Workshop Modules",
+      "Template"
+    ]
+  },
+  {
+    "objectID": "mod-template.html#module-content-section-2",
+    "href": "mod-template.html#module-content-section-2",
+    "title": "Template Module",
+    "section": "Module Content Section 2",
+    "text": "Module Content Section 2\n\nSub-Section 1\n\n\nSub-Section 2",
+    "crumbs": [
+      "Home",
+      "Workshop Modules",
+      "Template"
+    ]
+  },
+  {
+    "objectID": "mod-template.html#callout-block-examples",
+    "href": "mod-template.html#callout-block-examples",
+    "title": "Template Module",
+    "section": "Callout Block Examples",
+    "text": "Callout Block Examples\n\n\n\n\n\n\nImportant Error!\n\n\n\n\n\nUse this callout for likely issues (either technical or interpersonal) and how to solve them.\n\n\n\n\n\n\n\n\n\nWarning Activity\n\n\n\n\n\nUse this callout for instructions on an interactive activity.\n\nPhase 1Phase 2Phase N\n\n\nInstructions for first phase of activity\n\n\nInstructions for second phase of activity\n\n\nInstructions for Nth phase of activity.\n\n\n\n\n\n\n\n\n\n\n\n\nTip Discussion Prompt\n\n\n\n\n\nUse this callout for discussion prompts and/or self-reflection questions.\n\n\n\n\n\n\n\n\n\nNote Further Reading\n\n\n\n\n\nUse this callout to link to additional/external resources relevant to a given topic. This is preferable to Quarto’s footnote feature as this method (A) highlights the text within it and (B) emphasizes that these resources are external (where a footnote could be used to relay more of our own opinions/context).",
+    "crumbs": [
+      "Home",
+      "Workshop Modules",
+      "Template"
+    ]
   },
   {
     "objectID": "glossary.html",
@@ -26,5 +72,25 @@
     "title": "AI Term Glossary",
     "section": "",
     "text": "Check back later!"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "AI in a Day Workshop",
+    "section": "",
+    "text": "Check back later!",
+    "crumbs": [
+      "Home"
+    ]
+  },
+  {
+    "objectID": "index.html#under-construction",
+    "href": "index.html#under-construction",
+    "title": "AI in a Day Workshop",
+    "section": "",
+    "text": "Check back later!",
+    "crumbs": [
+      "Home"
+    ]
   }
 ]

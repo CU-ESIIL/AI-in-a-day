@@ -1,11 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://CU-ESIIL.github.io/AI-in-a-day_wkshp/index.html</loc>
-    <lastmod>2026-09-03T14:16:21.512Z</lastmod>
+    <loc>https://CU-ESIIL.github.io/AI-in-a-day/mod-template.html</loc>
+    <lastmod>2026-09-14T13:30:12.790Z</lastmod>
   </url>
   <url>
-    <loc>https://CU-ESIIL.github.io/AI-in-a-day_wkshp/glossary.html</loc>
-    <lastmod>2026-09-03T14:16:21.512Z</lastmod>
+    <loc>https://CU-ESIIL.github.io/AI-in-a-day/glossary.html</loc>
+    <lastmod>2026-09-14T13:30:12.788Z</lastmod>
+  </url>
+  <url>
+    <loc>https://CU-ESIIL.github.io/AI-in-a-day/index.html</loc>
+    <lastmod>2026-09-14T13:30:12.790Z</lastmod>
   </url>
 </urlset>

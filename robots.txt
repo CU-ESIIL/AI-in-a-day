@@ -1,1 +1,1 @@
-Sitemap: https://CU-ESIIL.github.io/AI-in-a-day_wkshp/sitemap.xml
+Sitemap: https://CU-ESIIL.github.io/AI-in-a-day/sitemap.xml
