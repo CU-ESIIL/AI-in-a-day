@@ -12,6 +12,7 @@ website:
   title: '"AI in a Day" Workshop Materials'
   repo-url: https://github.com/CU-ESIIL/AI-in-a-day
   repo-actions: [issue]
+  favicon: /images/logo/esiil.png
   navbar:
     background: primary
     left:
