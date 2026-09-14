@@ -50,7 +50,8 @@ pre code:not(.sourceCode) { background-color: $gray-2; }
 .nav-tabs .nav-link.active { 
   background-color: #FFF; 
   color: $black; }
-.tab-content { background-color: #FFF; }
+.tab-content { background-color: #FFF; 
+  color: $black; }
 
 // Navbar dropdown elements
 .dropdown-menu{
