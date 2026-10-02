@@ -53,6 +53,11 @@ pre code:not(.sourceCode) { background-color: $gray-2; }
 .tab-content { background-color: #FFF; 
   color: $black; }
 
+// Improve contrast for callout body
+.callout-body { 
+  background-color: #FFF; 
+  color: $black; }
+
 // Navbar dropdown elements
 .dropdown-menu{
   --bs-dropdown-link-hover-color: #f4f3ee;
