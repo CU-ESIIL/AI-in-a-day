@@ -48,15 +48,16 @@ pre code:not(.sourceCode) { background-color: $gray-2; }
 
 // Improve contrast for active tabset panel (tab & tab content)
 .nav-tabs .nav-link.active { 
-  background-color: #FFF; 
-  color: $black; }
-.tab-content { background-color: #FFF; 
-  color: $black; }
+  background-color: $black; 
+  color: $cream; }
+.tab-content { 
+  background-color: $black; 
+  color: $cream; }
 
 // Improve contrast for callout body
 .callout-body { 
-  background-color: #FFF; 
-  color: $black; }
+  background-color: $black; 
+  color: $cream; }
 
 // Navbar dropdown elements
 .dropdown-menu{
