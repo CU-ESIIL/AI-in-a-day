@@ -40,7 +40,7 @@
     "href": "mod-template.html#module-content-section-2",
     "title": "Template Module",
     "section": "Module Content Section 2",
-    "text": "Module Content Section 2\n\nSub-Section 1\n\n\nSub-Section 2",
+    "text": "Module Content Section 2\n\nSub-Section 1\nExample in-text citation (Zewe 2025); hovering over the in-text citation shows the full citation, clicking it sends you to the references section at the end of the page.\n\n\nSub-Section 2",
     "crumbs": [
       "Home",
       "Workshop Modules",
@@ -52,7 +52,7 @@
     "href": "mod-template.html#callout-block-examples",
     "title": "Template Module",
     "section": "Callout Block Examples",
-    "text": "Callout Block Examples\n\n\n\n\n\n\nImportant Error!\n\n\n\n\n\nUse this callout for likely issues (either technical or interpersonal) and how to solve them.\n\n\n\n\n\n\n\n\n\nWarning Activity\n\n\n\n\n\nUse this callout for instructions on an interactive activity.\n\nPhase 1Phase 2Phase N\n\n\nInstructions for first phase of activity\n\n\nInstructions for second phase of activity\n\n\nInstructions for Nth phase of activity.\n\n\n\n\n\n\n\n\n\n\n\n\nTip Discussion Prompt\n\n\n\n\n\nUse this callout for discussion prompts and/or self-reflection questions.\n\n\n\n\n\n\n\n\n\nNote Further Reading\n\n\n\n\n\nUse this callout to link to additional/external resources relevant to a given topic. This is preferable to Quarto’s footnote feature as this method (A) highlights the text within it and (B) emphasizes that these resources are external (where a footnote could be used to relay more of our own opinions/context).",
+    "text": "Callout Block Examples\n\n\n\n\n\n\nImportant Error!\n\n\n\n\n\nUse this callout for likely issues (either technical or interpersonal) and how to solve them.\n\n\n\n\n\n\n\n\n\nWarning Activity\n\n\n\n\n\nUse this callout for instructions on an interactive activity.\n\nPhase 1Phase 2Phase N\n\n\nInstructions for first phase of activity\n\n\nInstructions for second phase of activity\n\n\nInstructions for Nth phase of activity.\n\n\n\n\n\n\n\n\n\n\n\n\nTip Reflection Prompt\n\n\n\n\n\nUse this callout for discussion prompts and/or self-reflection questions.\n\n\n\n\n\n\n\n\n\nNote Further Reading\n\n\n\n\n\nUse this callout to link to additional/external resources relevant to a given topic. This is preferable to Quarto’s footnote feature as this method (A) highlights the text within it and (B) emphasizes that these resources are external (where a footnote could be used to relay more of our own opinions/context).",
     "crumbs": [
       "Home",
       "Workshop Modules",
