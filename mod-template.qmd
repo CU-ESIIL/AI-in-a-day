@@ -59,7 +59,7 @@ Instructions for N^th^ phase of activity.
 :::
 
 :::{.callout-tip icon="false" collapse="false"}
-## {{< fa users >}} Discussion Prompt
+## {{< fa users >}} Reflection Prompt
 
 Use this callout for discussion prompts and/or self-reflection questions.
 :::
