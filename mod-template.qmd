@@ -1,11 +1,12 @@
 ---
 title: "Template Module"
+bibliography: 
+    - references/template_refs.bib
 ---
 
 ## {{< fa compass >}} Roadmap
 
 _Include copy of NE's diagram for how AIIAD relates to the broader scientific process with special emphasis on the part(s) that are related to this module._
-
 
 :::{.callout-caution icon="false" collapse="false"}
 ## {{< fa brain >}} Learning Objectives
@@ -24,6 +25,9 @@ After working through this lesson, you will be able to:
 
 
 ### Sub-Section 1
+
+Example in-text citation [@zewe_2025]; hovering over the in-text citation shows the full citation, clicking it sends you to the references section at the end of the page.
+
 
 ### Sub-Section 2
 
