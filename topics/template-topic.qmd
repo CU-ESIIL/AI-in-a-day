@@ -1,28 +1,4 @@
----
-title: "Template Module"
-bibliography: 
-    - references/template_refs.bib
----
-
-## {{< fa compass >}} Roadmap
-
-_Include copy of NE's diagram for how AIIAD relates to the broader scientific process with special emphasis on the part(s) that are related to this module._
-
-:::{.callout-caution icon="false" collapse="false"}
-## {{< fa brain >}} Learning Objectives
-
-After working through this lesson, you will be able to:
-
-- List of 3-5 learning objectives (use [Bloom's Taxonomy](https://en.wikipedia.org/wiki/Bloom%27s_taxonomy) verbs!)
-
-:::
-
-## Module Content Section 1
-
-
-
-## Module Content Section 2
-
+<!--- Put 2nd-level header in the _module page_ in which this file is embedded! --->
 
 ### Sub-Section 1
 
@@ -32,7 +8,8 @@ Example in-text citation [@zewe_2025]; hovering over the in-text citation shows 
 ### Sub-Section 2
 
 
-## Callout Block Examples
+
+### Callout Block Examples
 
 :::{.callout-important icon="false" collapse="false"}
 ## {{< fa triangle-exclamation >}} Error!
@@ -73,4 +50,3 @@ Use this callout for discussion prompts and/or self-reflection questions.
 
 Use this callout to link to additional/external resources relevant to a given topic. This is preferable to [Quarto's footnote feature](https://quarto.org/docs/authoring/markdown-basics.html#footnotes) as this method (A) highlights the text within it and (B) emphasizes that these resources are _external_ (where a footnote could be used to relay more of our own opinions/context).
 :::
-

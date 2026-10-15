@@ -12,7 +12,7 @@ website:
   title: '"AI in a Day" Workshop Materials'
   repo-url: https://github.com/CU-ESIIL/AI-in-a-day
   repo-actions: [issue]
-  favicon: /images/logo/esiil.png
+  favicon: /topics/images/logo/esiil.png
   navbar:
     background: primary
     left:
@@ -30,8 +30,16 @@ website:
         href: index.qmd
       - section: "Workshop Modules"
         contents:
-            - text: "Template"
-              href: mod-template.qmd
+            - text: "1. "
+              href: mod-01.qmd
+            - text: "2. "
+              href: mod-02.qmd
+            - text: "3. "
+              href: mod-03.qmd
+            - text: "4. "
+              href: mod-04.qmd
+            - text: "5. "
+              href: mod-05.qmd
   page-footer: 
     center: "Copyright &copy; 2026, University of Colorado Boulder <br> Materials made with [Quarto](https://quarto.org/)"
     background: secondary

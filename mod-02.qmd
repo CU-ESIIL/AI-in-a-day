@@ -1,0 +1,22 @@
+---
+title: "Template Module"
+bibliography: 
+    - references/template_refs.bib
+---
+
+## {{< fa compass >}} Roadmap
+
+_Include copy of NE's diagram for how AIIAD relates to the broader scientific process with special emphasis on the part(s) that are related to this module._
+
+:::{.callout-caution icon="false" collapse="false"}
+## {{< fa brain >}} Learning Objectives
+
+After working through this lesson, you will be able to:
+
+- List of 3-5 learning objectives (use [Bloom's Taxonomy](https://en.wikipedia.org/wiki/Bloom%27s_taxonomy) verbs!)
+
+:::
+
+## Topic Title 1
+
+{{< include topics/template-topic.qmd >}}
