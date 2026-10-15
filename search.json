@@ -1,77 +1,82 @@
 [
   {
-    "objectID": "mod-template.html",
-    "href": "mod-template.html",
+    "objectID": "topics/template-topic.html",
+    "href": "topics/template-topic.html",
+    "title": "\"AI in a Day\" Workshop Materials",
+    "section": "",
+    "text": "Sub-Section 1\nExample in-text citation [@zewe_2025]; hovering over the in-text citation shows the full citation, clicking it sends you to the references section at the end of the page.\n\n\nSub-Section 2\n\n\nCallout Block Examples\n\n\n\n\n\n\nImportant Error!\n\n\n\n\n\nUse this callout for likely issues (either technical or interpersonal) and how to solve them.\n\n\n\n\n\n\n\n\n\nWarning Activity\n\n\n\n\n\nUse this callout for instructions on an interactive activity.\n\nPhase 1Phase 2Phase N\n\n\nInstructions for first phase of activity\n\n\nInstructions for second phase of activity\n\n\nInstructions for Nth phase of activity.\n\n\n\n\n\n\n\n\n\n\n\n\nTip Reflection Prompt\n\n\n\n\n\nUse this callout for discussion prompts and/or self-reflection questions.\n\n\n\n\n\n\n\n\n\nNote Further Reading\n\n\n\n\n\nUse this callout to link to additional/external resources relevant to a given topic. This is preferable to Quarto’s footnote feature as this method (A) highlights the text within it and (B) emphasizes that these resources are external (where a footnote could be used to relay more of our own opinions/context)."
+  },
+  {
+    "objectID": "mod-04.html",
+    "href": "mod-04.html",
     "title": "Template Module",
     "section": "",
     "text": "Include copy of NE’s diagram for how AIIAD relates to the broader scientific process with special emphasis on the part(s) that are related to this module.\n\n\n\n\n\n\nCaution Learning Objectives\n\n\n\n\n\nAfter working through this lesson, you will be able to:\n\nList of 3-5 learning objectives (use Bloom’s Taxonomy verbs!)",
     "crumbs": [
       "Home",
       "Workshop Modules",
-      "Template"
+      "4. "
     ]
   },
   {
-    "objectID": "mod-template.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120636f6d70617373203e7d7d-roadmap",
-    "href": "mod-template.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120636f6d70617373203e7d7d-roadmap",
+    "objectID": "mod-04.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120636f6d70617373203e7d7d-roadmap",
+    "href": "mod-04.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120636f6d70617373203e7d7d-roadmap",
     "title": "Template Module",
     "section": "",
     "text": "Include copy of NE’s diagram for how AIIAD relates to the broader scientific process with special emphasis on the part(s) that are related to this module.\n\n\n\n\n\n\nCaution Learning Objectives\n\n\n\n\n\nAfter working through this lesson, you will be able to:\n\nList of 3-5 learning objectives (use Bloom’s Taxonomy verbs!)",
     "crumbs": [
       "Home",
       "Workshop Modules",
-      "Template"
+      "4. "
     ]
   },
   {
-    "objectID": "mod-template.html#module-content-section-1",
-    "href": "mod-template.html#module-content-section-1",
+    "objectID": "mod-04.html#topic-title-1",
+    "href": "mod-04.html#topic-title-1",
     "title": "Template Module",
-    "section": "Module Content Section 1",
-    "text": "Module Content Section 1",
+    "section": "Topic Title 1",
+    "text": "Topic Title 1\n\n\nSub-Section 1\nExample in-text citation (Zewe 2025); hovering over the in-text citation shows the full citation, clicking it sends you to the references section at the end of the page.\n\n\nSub-Section 2\n\n\nCallout Block Examples\n\n\n\n\n\n\nImportant Error!\n\n\n\n\n\nUse this callout for likely issues (either technical or interpersonal) and how to solve them.\n\n\n\n\n\n\n\n\n\nWarning Activity\n\n\n\n\n\nUse this callout for instructions on an interactive activity.\n\nPhase 1Phase 2Phase N\n\n\nInstructions for first phase of activity\n\n\nInstructions for second phase of activity\n\n\nInstructions for Nth phase of activity.\n\n\n\n\n\n\n\n\n\n\n\n\nTip Reflection Prompt\n\n\n\n\n\nUse this callout for discussion prompts and/or self-reflection questions.\n\n\n\n\n\n\n\n\n\nNote Further Reading\n\n\n\n\n\nUse this callout to link to additional/external resources relevant to a given topic. This is preferable to Quarto’s footnote feature as this method (A) highlights the text within it and (B) emphasizes that these resources are external (where a footnote could be used to relay more of our own opinions/context).",
     "crumbs": [
       "Home",
       "Workshop Modules",
-      "Template"
+      "4. "
     ]
   },
   {
-    "objectID": "mod-template.html#module-content-section-2",
-    "href": "mod-template.html#module-content-section-2",
+    "objectID": "mod-02.html",
+    "href": "mod-02.html",
     "title": "Template Module",
-    "section": "Module Content Section 2",
-    "text": "Module Content Section 2\n\nSub-Section 1\nExample in-text citation (Zewe 2025); hovering over the in-text citation shows the full citation, clicking it sends you to the references section at the end of the page.\n\n\nSub-Section 2",
-    "crumbs": [
-      "Home",
-      "Workshop Modules",
-      "Template"
-    ]
-  },
-  {
-    "objectID": "mod-template.html#callout-block-examples",
-    "href": "mod-template.html#callout-block-examples",
-    "title": "Template Module",
-    "section": "Callout Block Examples",
-    "text": "Callout Block Examples\n\n\n\n\n\n\nImportant Error!\n\n\n\n\n\nUse this callout for likely issues (either technical or interpersonal) and how to solve them.\n\n\n\n\n\n\n\n\n\nWarning Activity\n\n\n\n\n\nUse this callout for instructions on an interactive activity.\n\nPhase 1Phase 2Phase N\n\n\nInstructions for first phase of activity\n\n\nInstructions for second phase of activity\n\n\nInstructions for Nth phase of activity.\n\n\n\n\n\n\n\n\n\n\n\n\nTip Reflection Prompt\n\n\n\n\n\nUse this callout for discussion prompts and/or self-reflection questions.\n\n\n\n\n\n\n\n\n\nNote Further Reading\n\n\n\n\n\nUse this callout to link to additional/external resources relevant to a given topic. This is preferable to Quarto’s footnote feature as this method (A) highlights the text within it and (B) emphasizes that these resources are external (where a footnote could be used to relay more of our own opinions/context).",
-    "crumbs": [
-      "Home",
-      "Workshop Modules",
-      "Template"
-    ]
-  },
-  {
-    "objectID": "glossary.html",
-    "href": "glossary.html",
-    "title": "AI Term Glossary",
     "section": "",
-    "text": "Check back later!"
+    "text": "Include copy of NE’s diagram for how AIIAD relates to the broader scientific process with special emphasis on the part(s) that are related to this module.\n\n\n\n\n\n\nCaution Learning Objectives\n\n\n\n\n\nAfter working through this lesson, you will be able to:\n\nList of 3-5 learning objectives (use Bloom’s Taxonomy verbs!)",
+    "crumbs": [
+      "Home",
+      "Workshop Modules",
+      "2. "
+    ]
   },
   {
-    "objectID": "glossary.html#under-construction",
-    "href": "glossary.html#under-construction",
-    "title": "AI Term Glossary",
+    "objectID": "mod-02.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120636f6d70617373203e7d7d-roadmap",
+    "href": "mod-02.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120636f6d70617373203e7d7d-roadmap",
+    "title": "Template Module",
     "section": "",
-    "text": "Check back later!"
+    "text": "Include copy of NE’s diagram for how AIIAD relates to the broader scientific process with special emphasis on the part(s) that are related to this module.\n\n\n\n\n\n\nCaution Learning Objectives\n\n\n\n\n\nAfter working through this lesson, you will be able to:\n\nList of 3-5 learning objectives (use Bloom’s Taxonomy verbs!)",
+    "crumbs": [
+      "Home",
+      "Workshop Modules",
+      "2. "
+    ]
+  },
+  {
+    "objectID": "mod-02.html#topic-title-1",
+    "href": "mod-02.html#topic-title-1",
+    "title": "Template Module",
+    "section": "Topic Title 1",
+    "text": "Topic Title 1\n\n\nSub-Section 1\nExample in-text citation (Zewe 2025); hovering over the in-text citation shows the full citation, clicking it sends you to the references section at the end of the page.\n\n\nSub-Section 2\n\n\nCallout Block Examples\n\n\n\n\n\n\nImportant Error!\n\n\n\n\n\nUse this callout for likely issues (either technical or interpersonal) and how to solve them.\n\n\n\n\n\n\n\n\n\nWarning Activity\n\n\n\n\n\nUse this callout for instructions on an interactive activity.\n\nPhase 1Phase 2Phase N\n\n\nInstructions for first phase of activity\n\n\nInstructions for second phase of activity\n\n\nInstructions for Nth phase of activity.\n\n\n\n\n\n\n\n\n\n\n\n\nTip Reflection Prompt\n\n\n\n\n\nUse this callout for discussion prompts and/or self-reflection questions.\n\n\n\n\n\n\n\n\n\nNote Further Reading\n\n\n\n\n\nUse this callout to link to additional/external resources relevant to a given topic. This is preferable to Quarto’s footnote feature as this method (A) highlights the text within it and (B) emphasizes that these resources are external (where a footnote could be used to relay more of our own opinions/context).",
+    "crumbs": [
+      "Home",
+      "Workshop Modules",
+      "2. "
+    ]
   },
   {
     "objectID": "index.html",
@@ -91,6 +96,128 @@
     "text": "Check back later!",
     "crumbs": [
       "Home"
+    ]
+  },
+  {
+    "objectID": "glossary.html",
+    "href": "glossary.html",
+    "title": "AI Term Glossary",
+    "section": "",
+    "text": "Check back later!"
+  },
+  {
+    "objectID": "glossary.html#under-construction",
+    "href": "glossary.html#under-construction",
+    "title": "AI Term Glossary",
+    "section": "",
+    "text": "Check back later!"
+  },
+  {
+    "objectID": "mod-01.html",
+    "href": "mod-01.html",
+    "title": "Template Module",
+    "section": "",
+    "text": "Include copy of NE’s diagram for how AIIAD relates to the broader scientific process with special emphasis on the part(s) that are related to this module.\n\n\n\n\n\n\nCaution Learning Objectives\n\n\n\n\n\nAfter working through this lesson, you will be able to:\n\nList of 3-5 learning objectives (use Bloom’s Taxonomy verbs!)",
+    "crumbs": [
+      "Home",
+      "Workshop Modules",
+      "1. "
+    ]
+  },
+  {
+    "objectID": "mod-01.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120636f6d70617373203e7d7d-roadmap",
+    "href": "mod-01.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120636f6d70617373203e7d7d-roadmap",
+    "title": "Template Module",
+    "section": "",
+    "text": "Include copy of NE’s diagram for how AIIAD relates to the broader scientific process with special emphasis on the part(s) that are related to this module.\n\n\n\n\n\n\nCaution Learning Objectives\n\n\n\n\n\nAfter working through this lesson, you will be able to:\n\nList of 3-5 learning objectives (use Bloom’s Taxonomy verbs!)",
+    "crumbs": [
+      "Home",
+      "Workshop Modules",
+      "1. "
+    ]
+  },
+  {
+    "objectID": "mod-01.html#topic-title-1",
+    "href": "mod-01.html#topic-title-1",
+    "title": "Template Module",
+    "section": "Topic Title 1",
+    "text": "Topic Title 1\n\n\nSub-Section 1\nExample in-text citation (Zewe 2025); hovering over the in-text citation shows the full citation, clicking it sends you to the references section at the end of the page.\n\n\nSub-Section 2\n\n\nCallout Block Examples\n\n\n\n\n\n\nImportant Error!\n\n\n\n\n\nUse this callout for likely issues (either technical or interpersonal) and how to solve them.\n\n\n\n\n\n\n\n\n\nWarning Activity\n\n\n\n\n\nUse this callout for instructions on an interactive activity.\n\nPhase 1Phase 2Phase N\n\n\nInstructions for first phase of activity\n\n\nInstructions for second phase of activity\n\n\nInstructions for Nth phase of activity.\n\n\n\n\n\n\n\n\n\n\n\n\nTip Reflection Prompt\n\n\n\n\n\nUse this callout for discussion prompts and/or self-reflection questions.\n\n\n\n\n\n\n\n\n\nNote Further Reading\n\n\n\n\n\nUse this callout to link to additional/external resources relevant to a given topic. This is preferable to Quarto’s footnote feature as this method (A) highlights the text within it and (B) emphasizes that these resources are external (where a footnote could be used to relay more of our own opinions/context).",
+    "crumbs": [
+      "Home",
+      "Workshop Modules",
+      "1. "
+    ]
+  },
+  {
+    "objectID": "mod-03.html",
+    "href": "mod-03.html",
+    "title": "Template Module",
+    "section": "",
+    "text": "Include copy of NE’s diagram for how AIIAD relates to the broader scientific process with special emphasis on the part(s) that are related to this module.\n\n\n\n\n\n\nCaution Learning Objectives\n\n\n\n\n\nAfter working through this lesson, you will be able to:\n\nList of 3-5 learning objectives (use Bloom’s Taxonomy verbs!)",
+    "crumbs": [
+      "Home",
+      "Workshop Modules",
+      "3. "
+    ]
+  },
+  {
+    "objectID": "mod-03.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120636f6d70617373203e7d7d-roadmap",
+    "href": "mod-03.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120636f6d70617373203e7d7d-roadmap",
+    "title": "Template Module",
+    "section": "",
+    "text": "Include copy of NE’s diagram for how AIIAD relates to the broader scientific process with special emphasis on the part(s) that are related to this module.\n\n\n\n\n\n\nCaution Learning Objectives\n\n\n\n\n\nAfter working through this lesson, you will be able to:\n\nList of 3-5 learning objectives (use Bloom’s Taxonomy verbs!)",
+    "crumbs": [
+      "Home",
+      "Workshop Modules",
+      "3. "
+    ]
+  },
+  {
+    "objectID": "mod-03.html#topic-title-1",
+    "href": "mod-03.html#topic-title-1",
+    "title": "Template Module",
+    "section": "Topic Title 1",
+    "text": "Topic Title 1\n\n\nSub-Section 1\nExample in-text citation (Zewe 2025); hovering over the in-text citation shows the full citation, clicking it sends you to the references section at the end of the page.\n\n\nSub-Section 2\n\n\nCallout Block Examples\n\n\n\n\n\n\nImportant Error!\n\n\n\n\n\nUse this callout for likely issues (either technical or interpersonal) and how to solve them.\n\n\n\n\n\n\n\n\n\nWarning Activity\n\n\n\n\n\nUse this callout for instructions on an interactive activity.\n\nPhase 1Phase 2Phase N\n\n\nInstructions for first phase of activity\n\n\nInstructions for second phase of activity\n\n\nInstructions for Nth phase of activity.\n\n\n\n\n\n\n\n\n\n\n\n\nTip Reflection Prompt\n\n\n\n\n\nUse this callout for discussion prompts and/or self-reflection questions.\n\n\n\n\n\n\n\n\n\nNote Further Reading\n\n\n\n\n\nUse this callout to link to additional/external resources relevant to a given topic. This is preferable to Quarto’s footnote feature as this method (A) highlights the text within it and (B) emphasizes that these resources are external (where a footnote could be used to relay more of our own opinions/context).",
+    "crumbs": [
+      "Home",
+      "Workshop Modules",
+      "3. "
+    ]
+  },
+  {
+    "objectID": "mod-05.html",
+    "href": "mod-05.html",
+    "title": "Template Module",
+    "section": "",
+    "text": "Include copy of NE’s diagram for how AIIAD relates to the broader scientific process with special emphasis on the part(s) that are related to this module.\n\n\n\n\n\n\nCaution Learning Objectives\n\n\n\n\n\nAfter working through this lesson, you will be able to:\n\nList of 3-5 learning objectives (use Bloom’s Taxonomy verbs!)",
+    "crumbs": [
+      "Home",
+      "Workshop Modules",
+      "5. "
+    ]
+  },
+  {
+    "objectID": "mod-05.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120636f6d70617373203e7d7d-roadmap",
+    "href": "mod-05.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120636f6d70617373203e7d7d-roadmap",
+    "title": "Template Module",
+    "section": "",
+    "text": "Include copy of NE’s diagram for how AIIAD relates to the broader scientific process with special emphasis on the part(s) that are related to this module.\n\n\n\n\n\n\nCaution Learning Objectives\n\n\n\n\n\nAfter working through this lesson, you will be able to:\n\nList of 3-5 learning objectives (use Bloom’s Taxonomy verbs!)",
+    "crumbs": [
+      "Home",
+      "Workshop Modules",
+      "5. "
+    ]
+  },
+  {
+    "objectID": "mod-05.html#topic-title-1",
+    "href": "mod-05.html#topic-title-1",
+    "title": "Template Module",
+    "section": "Topic Title 1",
+    "text": "Topic Title 1\n\n\nSub-Section 1\nExample in-text citation (Zewe 2025); hovering over the in-text citation shows the full citation, clicking it sends you to the references section at the end of the page.\n\n\nSub-Section 2\n\n\nCallout Block Examples\n\n\n\n\n\n\nImportant Error!\n\n\n\n\n\nUse this callout for likely issues (either technical or interpersonal) and how to solve them.\n\n\n\n\n\n\n\n\n\nWarning Activity\n\n\n\n\n\nUse this callout for instructions on an interactive activity.\n\nPhase 1Phase 2Phase N\n\n\nInstructions for first phase of activity\n\n\nInstructions for second phase of activity\n\n\nInstructions for Nth phase of activity.\n\n\n\n\n\n\n\n\n\n\n\n\nTip Reflection Prompt\n\n\n\n\n\nUse this callout for discussion prompts and/or self-reflection questions.\n\n\n\n\n\n\n\n\n\nNote Further Reading\n\n\n\n\n\nUse this callout to link to additional/external resources relevant to a given topic. This is preferable to Quarto’s footnote feature as this method (A) highlights the text within it and (B) emphasizes that these resources are external (where a footnote could be used to relay more of our own opinions/context).",
+    "crumbs": [
+      "Home",
+      "Workshop Modules",
+      "5. "
     ]
   }
 ]
