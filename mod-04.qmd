@@ -11,9 +11,16 @@ _Include copy of NE's diagram for how AIIAD relates to the broader scientific pr
 :::{.callout-caution icon="false" collapse="false"}
 ## {{< fa brain >}} Learning Objectives
 
+### {{< fa person-digging >}} These LOs are Under Construction!
+
 After working through this lesson, you will be able to:
 
-- List of 3-5 learning objectives (use [Bloom's Taxonomy](https://en.wikipedia.org/wiki/Bloom%27s_taxonomy) verbs!)
+- Explain effective ways to document and disclose AI use
+- Discuss pathways for how AI can be used to help writing
+
+<!---
+If you update these objectives, please use [Bloom's Taxonomy](https://en.wikipedia.org/wiki/Bloom%27s_taxonomy) verbs!
+--->
 
 :::
 
