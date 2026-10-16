@@ -103,14 +103,22 @@
     "href": "glossary.html",
     "title": "AI Term Glossary",
     "section": "",
-    "text": "Check back later!"
+    "text": "Check back later!",
+    "crumbs": [
+      "Home",
+      "Glossary"
+    ]
   },
   {
     "objectID": "glossary.html#under-construction",
     "href": "glossary.html#under-construction",
     "title": "AI Term Glossary",
     "section": "",
-    "text": "Check back later!"
+    "text": "Check back later!",
+    "crumbs": [
+      "Home",
+      "Glossary"
+    ]
   },
   {
     "objectID": "mod-01.html",
