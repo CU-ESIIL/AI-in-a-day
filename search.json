@@ -1,19 +1,18 @@
 [
   {
-    "objectID": "topics/template-topic.html",
-    "href": "topics/template-topic.html",
+    "objectID": "topics/mod-0x_content-description.html",
+    "href": "topics/mod-0x_content-description.html",
     "title": "\"AI in a Day\" Workshop Materials",
     "section": "",
-    "text": "Sub-Section 1\nExample in-text citation [@zewe_2025]; hovering over the in-text citation shows the full citation, clicking it sends you to the references section at the end of the page.\n\n\nSub-Section 2\n\n\nCallout Block Examples\n\n\n\n\n\n\nImportant Error!\n\n\n\n\n\nUse this callout for likely issues (either technical or interpersonal) and how to solve them.\n\n\n\n\n\n\n\n\n\nWarning Activity\n\n\n\n\n\nUse this callout for instructions on an interactive activity.\n\nPhase 1Phase 2Phase N\n\n\nInstructions for first phase of activity\n\n\nInstructions for second phase of activity\n\n\nInstructions for Nth phase of activity.\n\n\n\n\n\n\n\n\n\n\n\n\nTip Reflection Prompt\n\n\n\n\n\nUse this callout for discussion prompts and/or self-reflection questions.\n\n\n\n\n\n\n\n\n\nNote Further Reading\n\n\n\n\n\nUse this callout to link to additional/external resources relevant to a given topic. This is preferable to Quarto’s footnote feature as this method (A) highlights the text within it and (B) emphasizes that these resources are external (where a footnote could be used to relay more of our own opinions/context)."
+    "text": "Sub-Section 1\nExample in-text citation [@zewe_2025]; hovering over the in-text citation shows the full citation, clicking it sends you to the references section at the end of the page.\n\n\nSub-Section 2\n\n\nCallout Block Examples\n\n\n\n\n\n\nImportant /  Ethics, Environment, & Responsibility Reminder\n\n\n\n\n\nUse this callout for reminders about bias, ethics, and/or opportunities to do X in a more environmentally-sustainable way.\nIf the point made in this callout is also made in module 5, link it!\n\n\n\n\n\n\n\n\n\nWarning Activity\n\n\n\n\n\nUse this callout for instructions on an interactive activity.\n\nPhase 1Phase 2Phase N\n\n\nInstructions for first phase of activity\n\n\nInstructions for second phase of activity\n\n\nInstructions for Nth phase of activity.\n\n\n\n\n\n\n\n\n\n\n\n\nTip Reflection Prompt\n\n\n\n\n\nUse this callout for discussion prompts and/or self-reflection questions.\n\n\n\n\n\n\n\n\n\nNote Further Reading\n\n\n\n\n\nUse this callout to link to additional/external resources relevant to a given topic. This is preferable to Quarto’s footnote feature as this method (A) highlights the text within it and (B) emphasizes that these resources are external (where a footnote could be used to relay more of our own opinions/context)."
   },
   {
     "objectID": "mod-04.html",
     "href": "mod-04.html",
     "title": "Discussion and Publication",
     "section": "",
-    "text": "Include copy of NE’s diagram for how AIIAD relates to the broader scientific process with special emphasis on the part(s) that are related to this module.\n\n\n\n\n\n\nCaution Learning Objectives\n\n\n\n\n\nAfter working through this lesson, you will be able to:\n\nList of 3-5 learning objectives (use Bloom’s Taxonomy verbs!)",
+    "text": "Include copy of NE’s diagram for how AIIAD relates to the broader scientific process with special emphasis on the part(s) that are related to this module.\n\n\n\n\n\n\nCaution Learning Objectives\n\n\n\n\n\n\nAfter working through this lesson, you will be able to:\n\nExplain effective ways to document and disclose AI use\nDiscuss pathways for how AI can be used to help writing",
     "crumbs": [
-      "Home",
       "Workshop Modules",
       "4. Discussion & Publication"
     ]
@@ -23,9 +22,8 @@
     "href": "mod-04.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120636f6d70617373203e7d7d-roadmap",
     "title": "Discussion and Publication",
     "section": "",
-    "text": "Include copy of NE’s diagram for how AIIAD relates to the broader scientific process with special emphasis on the part(s) that are related to this module.\n\n\n\n\n\n\nCaution Learning Objectives\n\n\n\n\n\nAfter working through this lesson, you will be able to:\n\nList of 3-5 learning objectives (use Bloom’s Taxonomy verbs!)",
+    "text": "Include copy of NE’s diagram for how AIIAD relates to the broader scientific process with special emphasis on the part(s) that are related to this module.\n\n\n\n\n\n\nCaution Learning Objectives\n\n\n\n\n\n\nAfter working through this lesson, you will be able to:\n\nExplain effective ways to document and disclose AI use\nDiscuss pathways for how AI can be used to help writing",
     "crumbs": [
-      "Home",
       "Workshop Modules",
       "4. Discussion & Publication"
     ]
@@ -35,9 +33,8 @@
     "href": "mod-04.html#topic-title-1",
     "title": "Discussion and Publication",
     "section": "Topic Title 1",
-    "text": "Topic Title 1\n\n\nSub-Section 1\nExample in-text citation (Zewe 2025); hovering over the in-text citation shows the full citation, clicking it sends you to the references section at the end of the page.\n\n\nSub-Section 2\n\n\nCallout Block Examples\n\n\n\n\n\n\nImportant Error!\n\n\n\n\n\nUse this callout for likely issues (either technical or interpersonal) and how to solve them.\n\n\n\n\n\n\n\n\n\nWarning Activity\n\n\n\n\n\nUse this callout for instructions on an interactive activity.\n\nPhase 1Phase 2Phase N\n\n\nInstructions for first phase of activity\n\n\nInstructions for second phase of activity\n\n\nInstructions for Nth phase of activity.\n\n\n\n\n\n\n\n\n\n\n\n\nTip Reflection Prompt\n\n\n\n\n\nUse this callout for discussion prompts and/or self-reflection questions.\n\n\n\n\n\n\n\n\n\nNote Further Reading\n\n\n\n\n\nUse this callout to link to additional/external resources relevant to a given topic. This is preferable to Quarto’s footnote feature as this method (A) highlights the text within it and (B) emphasizes that these resources are external (where a footnote could be used to relay more of our own opinions/context).",
+    "text": "Topic Title 1\n\n\n\nSub-Section 1\nExample in-text citation (Zewe 2025); hovering over the in-text citation shows the full citation, clicking it sends you to the references section at the end of the page.\n\n\nSub-Section 2\n\n\nCallout Block Examples\n\n\n\n\n\n\nImportant /  Ethics, Environment, & Responsibility Reminder\n\n\n\n\n\nUse this callout for reminders about bias, ethics, and/or opportunities to do X in a more environmentally-sustainable way.\nIf the point made in this callout is also made in module 5, link it!\n\n\n\n\n\n\n\n\n\nWarning Activity\n\n\n\n\n\nUse this callout for instructions on an interactive activity.\n\nPhase 1Phase 2Phase N\n\n\nInstructions for first phase of activity\n\n\nInstructions for second phase of activity\n\n\nInstructions for Nth phase of activity.\n\n\n\n\n\n\n\n\n\n\n\n\nTip Reflection Prompt\n\n\n\n\n\nUse this callout for discussion prompts and/or self-reflection questions.\n\n\n\n\n\n\n\n\n\nNote Further Reading\n\n\n\n\n\nUse this callout to link to additional/external resources relevant to a given topic. This is preferable to Quarto’s footnote feature as this method (A) highlights the text within it and (B) emphasizes that these resources are external (where a footnote could be used to relay more of our own opinions/context).",
     "crumbs": [
-      "Home",
       "Workshop Modules",
       "4. Discussion & Publication"
     ]
@@ -47,9 +44,8 @@
     "href": "mod-02.html",
     "title": "Literature Review and Research Questions",
     "section": "",
-    "text": "Include copy of NE’s diagram for how AIIAD relates to the broader scientific process with special emphasis on the part(s) that are related to this module.\n\n\n\n\n\n\nCaution Learning Objectives\n\n\n\n\n\nAfter working through this lesson, you will be able to:\n\nList of 3-5 learning objectives (use Bloom’s Taxonomy verbs!)",
+    "text": "Include copy of NE’s diagram for how AIIAD relates to the broader scientific process with special emphasis on the part(s) that are related to this module.\n\n\n\n\n\n\nCaution Learning Objectives\n\n\n\n\n\n\nAfter working through this lesson, you will be able to:\n\nDevelop an AI workflow for collecting and synthesizing literature\nPractice collaborating with an AI to evaluating different approaches for statistical analyses",
     "crumbs": [
-      "Home",
       "Workshop Modules",
       "2. Literature Review & Research Questions"
     ]
@@ -59,9 +55,8 @@
     "href": "mod-02.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120636f6d70617373203e7d7d-roadmap",
     "title": "Literature Review and Research Questions",
     "section": "",
-    "text": "Include copy of NE’s diagram for how AIIAD relates to the broader scientific process with special emphasis on the part(s) that are related to this module.\n\n\n\n\n\n\nCaution Learning Objectives\n\n\n\n\n\nAfter working through this lesson, you will be able to:\n\nList of 3-5 learning objectives (use Bloom’s Taxonomy verbs!)",
+    "text": "Include copy of NE’s diagram for how AIIAD relates to the broader scientific process with special emphasis on the part(s) that are related to this module.\n\n\n\n\n\n\nCaution Learning Objectives\n\n\n\n\n\n\nAfter working through this lesson, you will be able to:\n\nDevelop an AI workflow for collecting and synthesizing literature\nPractice collaborating with an AI to evaluating different approaches for statistical analyses",
     "crumbs": [
-      "Home",
       "Workshop Modules",
       "2. Literature Review & Research Questions"
     ]
@@ -71,9 +66,8 @@
     "href": "mod-02.html#topic-title-1",
     "title": "Literature Review and Research Questions",
     "section": "Topic Title 1",
-    "text": "Topic Title 1\n\n\nSub-Section 1\nExample in-text citation (Zewe 2025); hovering over the in-text citation shows the full citation, clicking it sends you to the references section at the end of the page.\n\n\nSub-Section 2\n\n\nCallout Block Examples\n\n\n\n\n\n\nImportant Error!\n\n\n\n\n\nUse this callout for likely issues (either technical or interpersonal) and how to solve them.\n\n\n\n\n\n\n\n\n\nWarning Activity\n\n\n\n\n\nUse this callout for instructions on an interactive activity.\n\nPhase 1Phase 2Phase N\n\n\nInstructions for first phase of activity\n\n\nInstructions for second phase of activity\n\n\nInstructions for Nth phase of activity.\n\n\n\n\n\n\n\n\n\n\n\n\nTip Reflection Prompt\n\n\n\n\n\nUse this callout for discussion prompts and/or self-reflection questions.\n\n\n\n\n\n\n\n\n\nNote Further Reading\n\n\n\n\n\nUse this callout to link to additional/external resources relevant to a given topic. This is preferable to Quarto’s footnote feature as this method (A) highlights the text within it and (B) emphasizes that these resources are external (where a footnote could be used to relay more of our own opinions/context).",
+    "text": "Topic Title 1\n\n\n\nSub-Section 1\nExample in-text citation (Zewe 2025); hovering over the in-text citation shows the full citation, clicking it sends you to the references section at the end of the page.\n\n\nSub-Section 2\n\n\nCallout Block Examples\n\n\n\n\n\n\nImportant /  Ethics, Environment, & Responsibility Reminder\n\n\n\n\n\nUse this callout for reminders about bias, ethics, and/or opportunities to do X in a more environmentally-sustainable way.\nIf the point made in this callout is also made in module 5, link it!\n\n\n\n\n\n\n\n\n\nWarning Activity\n\n\n\n\n\nUse this callout for instructions on an interactive activity.\n\nPhase 1Phase 2Phase N\n\n\nInstructions for first phase of activity\n\n\nInstructions for second phase of activity\n\n\nInstructions for Nth phase of activity.\n\n\n\n\n\n\n\n\n\n\n\n\nTip Reflection Prompt\n\n\n\n\n\nUse this callout for discussion prompts and/or self-reflection questions.\n\n\n\n\n\n\n\n\n\nNote Further Reading\n\n\n\n\n\nUse this callout to link to additional/external resources relevant to a given topic. This is preferable to Quarto’s footnote feature as this method (A) highlights the text within it and (B) emphasizes that these resources are external (where a footnote could be used to relay more of our own opinions/context).",
     "crumbs": [
-      "Home",
       "Workshop Modules",
       "2. Literature Review & Research Questions"
     ]
@@ -105,7 +99,6 @@
     "section": "",
     "text": "Check back later!",
     "crumbs": [
-      "Home",
       "Glossary"
     ]
   },
@@ -116,7 +109,6 @@
     "section": "",
     "text": "Check back later!",
     "crumbs": [
-      "Home",
       "Glossary"
     ]
   },
@@ -125,9 +117,8 @@
     "href": "mod-01.html",
     "title": "GenAI Fundamentals",
     "section": "",
-    "text": "Include copy of NE’s diagram for how AIIAD relates to the broader scientific process with special emphasis on the part(s) that are related to this module.\n\n\n\n\n\n\nCaution Learning Objectives\n\n\n\n\n\nAfter working through this lesson, you will be able to:\n\nList of 3-5 learning objectives (use Bloom’s Taxonomy verbs!)",
+    "text": "Include copy of NE’s diagram for how AIIAD relates to the broader scientific process with special emphasis on the part(s) that are related to this module.\n\n\n\n\n\n\nCaution Learning Objectives\n\n\n\n\n\n\nAfter working through this lesson, you will be able to:\n\nExplain how Generative AI relates to AI in general\nDiscuss how learning with and using AI affects skill acquisition and retention\nEvaluate the limitations of using AI for inference\n\nExplain what AI does with data\nExplore how ecologists/environmental researchers are interacting with AI\nContrast the pros and cons of different model types for research",
     "crumbs": [
-      "Home",
       "Workshop Modules",
       "1. GenAI Fundamentals"
     ]
@@ -137,9 +128,8 @@
     "href": "mod-01.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120636f6d70617373203e7d7d-roadmap",
     "title": "GenAI Fundamentals",
     "section": "",
-    "text": "Include copy of NE’s diagram for how AIIAD relates to the broader scientific process with special emphasis on the part(s) that are related to this module.\n\n\n\n\n\n\nCaution Learning Objectives\n\n\n\n\n\nAfter working through this lesson, you will be able to:\n\nList of 3-5 learning objectives (use Bloom’s Taxonomy verbs!)",
+    "text": "Include copy of NE’s diagram for how AIIAD relates to the broader scientific process with special emphasis on the part(s) that are related to this module.\n\n\n\n\n\n\nCaution Learning Objectives\n\n\n\n\n\n\nAfter working through this lesson, you will be able to:\n\nExplain how Generative AI relates to AI in general\nDiscuss how learning with and using AI affects skill acquisition and retention\nEvaluate the limitations of using AI for inference\n\nExplain what AI does with data\nExplore how ecologists/environmental researchers are interacting with AI\nContrast the pros and cons of different model types for research",
     "crumbs": [
-      "Home",
       "Workshop Modules",
       "1. GenAI Fundamentals"
     ]
@@ -149,9 +139,8 @@
     "href": "mod-01.html#topic-title-1",
     "title": "GenAI Fundamentals",
     "section": "Topic Title 1",
-    "text": "Topic Title 1\n\n\nSub-Section 1\nExample in-text citation (Zewe 2025); hovering over the in-text citation shows the full citation, clicking it sends you to the references section at the end of the page.\n\n\nSub-Section 2\n\n\nCallout Block Examples\n\n\n\n\n\n\nImportant Error!\n\n\n\n\n\nUse this callout for likely issues (either technical or interpersonal) and how to solve them.\n\n\n\n\n\n\n\n\n\nWarning Activity\n\n\n\n\n\nUse this callout for instructions on an interactive activity.\n\nPhase 1Phase 2Phase N\n\n\nInstructions for first phase of activity\n\n\nInstructions for second phase of activity\n\n\nInstructions for Nth phase of activity.\n\n\n\n\n\n\n\n\n\n\n\n\nTip Reflection Prompt\n\n\n\n\n\nUse this callout for discussion prompts and/or self-reflection questions.\n\n\n\n\n\n\n\n\n\nNote Further Reading\n\n\n\n\n\nUse this callout to link to additional/external resources relevant to a given topic. This is preferable to Quarto’s footnote feature as this method (A) highlights the text within it and (B) emphasizes that these resources are external (where a footnote could be used to relay more of our own opinions/context).",
+    "text": "Topic Title 1\n\n\n\nSub-Section 1\nExample in-text citation (Zewe 2025); hovering over the in-text citation shows the full citation, clicking it sends you to the references section at the end of the page.\n\n\nSub-Section 2\n\n\nCallout Block Examples\n\n\n\n\n\n\nImportant /  Ethics, Environment, & Responsibility Reminder\n\n\n\n\n\nUse this callout for reminders about bias, ethics, and/or opportunities to do X in a more environmentally-sustainable way.\nIf the point made in this callout is also made in module 5, link it!\n\n\n\n\n\n\n\n\n\nWarning Activity\n\n\n\n\n\nUse this callout for instructions on an interactive activity.\n\nPhase 1Phase 2Phase N\n\n\nInstructions for first phase of activity\n\n\nInstructions for second phase of activity\n\n\nInstructions for Nth phase of activity.\n\n\n\n\n\n\n\n\n\n\n\n\nTip Reflection Prompt\n\n\n\n\n\nUse this callout for discussion prompts and/or self-reflection questions.\n\n\n\n\n\n\n\n\n\nNote Further Reading\n\n\n\n\n\nUse this callout to link to additional/external resources relevant to a given topic. This is preferable to Quarto’s footnote feature as this method (A) highlights the text within it and (B) emphasizes that these resources are external (where a footnote could be used to relay more of our own opinions/context).",
     "crumbs": [
-      "Home",
       "Workshop Modules",
       "1. GenAI Fundamentals"
     ]
@@ -161,9 +150,8 @@
     "href": "mod-03.html",
     "title": "Methods, Analysis, and Interpretation of Results",
     "section": "",
-    "text": "Include copy of NE’s diagram for how AIIAD relates to the broader scientific process with special emphasis on the part(s) that are related to this module.\n\n\n\n\n\n\nCaution Learning Objectives\n\n\n\n\n\nAfter working through this lesson, you will be able to:\n\nList of 3-5 learning objectives (use Bloom’s Taxonomy verbs!)",
+    "text": "Include copy of NE’s diagram for how AIIAD relates to the broader scientific process with special emphasis on the part(s) that are related to this module.\n\n\n\n\n\n\nCaution Learning Objectives\n\n\n\n\n\n\nAfter working through this lesson, you will be able to:\n\nExplain the ways in which AI can intersect with core data science principles\nPractice using AI to review quality and troubleshoot errors from user-generated code\nExplain how to code with an AI assistant using a “plan, generate, evaluate, revise” loop\nCreate a multi-step data analysis workflow using agentic tools",
     "crumbs": [
-      "Home",
       "Workshop Modules",
       "3.  Methods & Results"
     ]
@@ -173,9 +161,8 @@
     "href": "mod-03.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120636f6d70617373203e7d7d-roadmap",
     "title": "Methods, Analysis, and Interpretation of Results",
     "section": "",
-    "text": "Include copy of NE’s diagram for how AIIAD relates to the broader scientific process with special emphasis on the part(s) that are related to this module.\n\n\n\n\n\n\nCaution Learning Objectives\n\n\n\n\n\nAfter working through this lesson, you will be able to:\n\nList of 3-5 learning objectives (use Bloom’s Taxonomy verbs!)",
+    "text": "Include copy of NE’s diagram for how AIIAD relates to the broader scientific process with special emphasis on the part(s) that are related to this module.\n\n\n\n\n\n\nCaution Learning Objectives\n\n\n\n\n\n\nAfter working through this lesson, you will be able to:\n\nExplain the ways in which AI can intersect with core data science principles\nPractice using AI to review quality and troubleshoot errors from user-generated code\nExplain how to code with an AI assistant using a “plan, generate, evaluate, revise” loop\nCreate a multi-step data analysis workflow using agentic tools",
     "crumbs": [
-      "Home",
       "Workshop Modules",
       "3.  Methods & Results"
     ]
@@ -185,9 +172,8 @@
     "href": "mod-03.html#topic-title-1",
     "title": "Methods, Analysis, and Interpretation of Results",
     "section": "Topic Title 1",
-    "text": "Topic Title 1\n\n\nSub-Section 1\nExample in-text citation (Zewe 2025); hovering over the in-text citation shows the full citation, clicking it sends you to the references section at the end of the page.\n\n\nSub-Section 2\n\n\nCallout Block Examples\n\n\n\n\n\n\nImportant Error!\n\n\n\n\n\nUse this callout for likely issues (either technical or interpersonal) and how to solve them.\n\n\n\n\n\n\n\n\n\nWarning Activity\n\n\n\n\n\nUse this callout for instructions on an interactive activity.\n\nPhase 1Phase 2Phase N\n\n\nInstructions for first phase of activity\n\n\nInstructions for second phase of activity\n\n\nInstructions for Nth phase of activity.\n\n\n\n\n\n\n\n\n\n\n\n\nTip Reflection Prompt\n\n\n\n\n\nUse this callout for discussion prompts and/or self-reflection questions.\n\n\n\n\n\n\n\n\n\nNote Further Reading\n\n\n\n\n\nUse this callout to link to additional/external resources relevant to a given topic. This is preferable to Quarto’s footnote feature as this method (A) highlights the text within it and (B) emphasizes that these resources are external (where a footnote could be used to relay more of our own opinions/context).",
+    "text": "Topic Title 1\n\n\n\nSub-Section 1\nExample in-text citation (Zewe 2025); hovering over the in-text citation shows the full citation, clicking it sends you to the references section at the end of the page.\n\n\nSub-Section 2\n\n\nCallout Block Examples\n\n\n\n\n\n\nImportant /  Ethics, Environment, & Responsibility Reminder\n\n\n\n\n\nUse this callout for reminders about bias, ethics, and/or opportunities to do X in a more environmentally-sustainable way.\nIf the point made in this callout is also made in module 5, link it!\n\n\n\n\n\n\n\n\n\nWarning Activity\n\n\n\n\n\nUse this callout for instructions on an interactive activity.\n\nPhase 1Phase 2Phase N\n\n\nInstructions for first phase of activity\n\n\nInstructions for second phase of activity\n\n\nInstructions for Nth phase of activity.\n\n\n\n\n\n\n\n\n\n\n\n\nTip Reflection Prompt\n\n\n\n\n\nUse this callout for discussion prompts and/or self-reflection questions.\n\n\n\n\n\n\n\n\n\nNote Further Reading\n\n\n\n\n\nUse this callout to link to additional/external resources relevant to a given topic. This is preferable to Quarto’s footnote feature as this method (A) highlights the text within it and (B) emphasizes that these resources are external (where a footnote could be used to relay more of our own opinions/context).",
     "crumbs": [
-      "Home",
       "Workshop Modules",
       "3.  Methods & Results"
     ]
@@ -197,9 +183,8 @@
     "href": "mod-05.html",
     "title": "Ethics and Responsibility",
     "section": "",
-    "text": "Include copy of NE’s diagram for how AIIAD relates to the broader scientific process with special emphasis on the part(s) that are related to this module.\n\n\n\n\n\n\nCaution Learning Objectives\n\n\n\n\n\nAfter working through this lesson, you will be able to:\n\nList of 3-5 learning objectives (use Bloom’s Taxonomy verbs!)",
+    "text": "Include copy of NE’s diagram for how AIIAD relates to the broader scientific process with special emphasis on the part(s) that are related to this module.\n\n\n\n\n\n\nCaution Learning Objectives\n\n\n\n\n\n\nAfter working through this lesson, you will be able to:\n\nEvaluate the environmental and social impact of AI use\nUnderstand the ethical implications of using AI\nPractice using AI in a responsible way",
     "crumbs": [
-      "Home",
       "Workshop Modules",
       "5. Ethics & Responsibility"
     ]
@@ -209,9 +194,8 @@
     "href": "mod-05.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120636f6d70617373203e7d7d-roadmap",
     "title": "Ethics and Responsibility",
     "section": "",
-    "text": "Include copy of NE’s diagram for how AIIAD relates to the broader scientific process with special emphasis on the part(s) that are related to this module.\n\n\n\n\n\n\nCaution Learning Objectives\n\n\n\n\n\nAfter working through this lesson, you will be able to:\n\nList of 3-5 learning objectives (use Bloom’s Taxonomy verbs!)",
+    "text": "Include copy of NE’s diagram for how AIIAD relates to the broader scientific process with special emphasis on the part(s) that are related to this module.\n\n\n\n\n\n\nCaution Learning Objectives\n\n\n\n\n\n\nAfter working through this lesson, you will be able to:\n\nEvaluate the environmental and social impact of AI use\nUnderstand the ethical implications of using AI\nPractice using AI in a responsible way",
     "crumbs": [
-      "Home",
       "Workshop Modules",
       "5. Ethics & Responsibility"
     ]
@@ -221,9 +205,8 @@
     "href": "mod-05.html#topic-title-1",
     "title": "Ethics and Responsibility",
     "section": "Topic Title 1",
-    "text": "Topic Title 1\n\n\nSub-Section 1\nExample in-text citation (Zewe 2025); hovering over the in-text citation shows the full citation, clicking it sends you to the references section at the end of the page.\n\n\nSub-Section 2\n\n\nCallout Block Examples\n\n\n\n\n\n\nImportant Error!\n\n\n\n\n\nUse this callout for likely issues (either technical or interpersonal) and how to solve them.\n\n\n\n\n\n\n\n\n\nWarning Activity\n\n\n\n\n\nUse this callout for instructions on an interactive activity.\n\nPhase 1Phase 2Phase N\n\n\nInstructions for first phase of activity\n\n\nInstructions for second phase of activity\n\n\nInstructions for Nth phase of activity.\n\n\n\n\n\n\n\n\n\n\n\n\nTip Reflection Prompt\n\n\n\n\n\nUse this callout for discussion prompts and/or self-reflection questions.\n\n\n\n\n\n\n\n\n\nNote Further Reading\n\n\n\n\n\nUse this callout to link to additional/external resources relevant to a given topic. This is preferable to Quarto’s footnote feature as this method (A) highlights the text within it and (B) emphasizes that these resources are external (where a footnote could be used to relay more of our own opinions/context).",
+    "text": "Topic Title 1\n\n\n\nSub-Section 1\nExample in-text citation (Zewe 2025); hovering over the in-text citation shows the full citation, clicking it sends you to the references section at the end of the page.\n\n\nSub-Section 2\n\n\nCallout Block Examples\n\n\n\n\n\n\nImportant /  Ethics, Environment, & Responsibility Reminder\n\n\n\n\n\nUse this callout for reminders about bias, ethics, and/or opportunities to do X in a more environmentally-sustainable way.\nIf the point made in this callout is also made in module 5, link it!\n\n\n\n\n\n\n\n\n\nWarning Activity\n\n\n\n\n\nUse this callout for instructions on an interactive activity.\n\nPhase 1Phase 2Phase N\n\n\nInstructions for first phase of activity\n\n\nInstructions for second phase of activity\n\n\nInstructions for Nth phase of activity.\n\n\n\n\n\n\n\n\n\n\n\n\nTip Reflection Prompt\n\n\n\n\n\nUse this callout for discussion prompts and/or self-reflection questions.\n\n\n\n\n\n\n\n\n\nNote Further Reading\n\n\n\n\n\nUse this callout to link to additional/external resources relevant to a given topic. This is preferable to Quarto’s footnote feature as this method (A) highlights the text within it and (B) emphasizes that these resources are external (where a footnote could be used to relay more of our own opinions/context).",
     "crumbs": [
-      "Home",
       "Workshop Modules",
       "5. Ethics & Responsibility"
     ]
