@@ -19,8 +19,6 @@ website:
       - text: "Home"
         href: index.qmd
     right: 
-      - text: "Glossary"
-        href: glossary.qmd
       - icon: github
         href: https://github.com/CU-ESIIL/AI-in-a-day
   sidebar:
@@ -40,6 +38,9 @@ website:
               href: mod-04.qmd
             - text: "5. "
               href: mod-05.qmd
+      - text: "Glossary"
+        href: glossary.qmd
+
   page-footer: 
     center: "Copyright &copy; 2026, University of Colorado Boulder <br> Materials made with [Quarto](https://quarto.org/)"
     background: secondary
