@@ -1,5 +1,5 @@
 ---
-title: "Template Module"
+title: "GenAI Fundamentals"
 bibliography: 
     - references/template_refs.bib
 ---

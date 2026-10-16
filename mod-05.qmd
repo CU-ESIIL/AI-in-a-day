@@ -1,5 +1,5 @@
 ---
-title: "Template Module"
+title: "Ethics and Responsibility"
 bibliography: 
     - references/template_refs.bib
 ---

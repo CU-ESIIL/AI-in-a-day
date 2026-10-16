@@ -28,15 +28,15 @@ website:
         href: index.qmd
       - section: "Workshop Modules"
         contents:
-            - text: "1. "
+            - text: "1. GenAI Fundamentals"
               href: mod-01.qmd
-            - text: "2. "
+            - text: "2. Literature Review & Research Questions"
               href: mod-02.qmd
-            - text: "3. "
+            - text: "3.  Methods & Results"
               href: mod-03.qmd
-            - text: "4. "
+            - text: "4. Discussion & Publication"
               href: mod-04.qmd
-            - text: "5. "
+            - text: "5. Ethics & Responsibility"
               href: mod-05.qmd
       - text: "Glossary"
         href: glossary.qmd
