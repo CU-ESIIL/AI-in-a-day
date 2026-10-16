@@ -11,9 +11,20 @@ _Include copy of NE's diagram for how AIIAD relates to the broader scientific pr
 :::{.callout-caution icon="false" collapse="false"}
 ## {{< fa brain >}} Learning Objectives
 
+### {{< fa person-digging >}} These LOs are Under Construction!
+
 After working through this lesson, you will be able to:
 
-- List of 3-5 learning objectives (use [Bloom's Taxonomy](https://en.wikipedia.org/wiki/Bloom%27s_taxonomy) verbs!)
+- Explain how Generative AI relates to AI in general
+- Discuss how learning with and using AI affects skill acquisition and retention
+- Evaluate the limitations of using AI for inference	
+- Explain what AI does with data
+- Explore how ecologists/environmental researchers are interacting with AI
+- Contrast the pros and cons of different model types for research
+
+<!---
+If you update these objectives, please use [Bloom's Taxonomy](https://en.wikipedia.org/wiki/Bloom%27s_taxonomy) verbs!
+--->
 
 :::
 
