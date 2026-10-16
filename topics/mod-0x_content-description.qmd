@@ -19,9 +19,11 @@ Example in-text citation [@zewe_2025]; hovering over the in-text citation shows 
 ### Callout Block Examples
 
 :::{.callout-important icon="false" collapse="false"}
-## {{< fa triangle-exclamation >}} Error!
+## {{< fa scale-unbalanced >}} / {{< fa cloud-sun >}} Ethics, Environment, & Responsibility Reminder
 
-Use this callout for likely issues (either technical or interpersonal) and how to solve them.
+Use this callout for reminders about bias, ethics, and/or opportunities to do X in a more environmentally-sustainable way.
+
+If the point made in this callout is also made in module 5, link it!
 :::
 
 
