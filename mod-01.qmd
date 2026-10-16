@@ -1,7 +1,7 @@
 ---
 title: "GenAI Fundamentals"
 bibliography: 
-    - references/template_refs.bib
+    - references/mod-01_refs.bib
 ---
 
 ## {{< fa compass >}} Roadmap
@@ -19,4 +19,4 @@ After working through this lesson, you will be able to:
 
 ## Topic Title 1
 
-{{< include topics/template-topic.qmd >}}
+{{< include topics/mod-0x_content-description.qmd >}}
