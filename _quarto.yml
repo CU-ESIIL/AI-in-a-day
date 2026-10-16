@@ -15,9 +15,6 @@ website:
   favicon: /topics/images/logo/esiil.png
   navbar:
     background: primary
-    left:
-      - text: "Home"
-        href: index.qmd
     right: 
       - icon: github
         href: https://github.com/CU-ESIIL/AI-in-a-day
